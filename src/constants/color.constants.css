@@ -1,0 +1,56 @@
+:root {
+  /* Core Design System Colors */
+  --color-primary: #ff6433;
+  --color-primary-hover: #e65225;
+  --color-dark-bg-start: #163664;
+  --color-dark-bg-end: #0a172a;
+  --color-white: #ffffff;
+  --color-text-dark: #181c24;
+  --color-text-slate: #1e293b;
+  --color-text-muted: #5c6678;
+  --color-text-gray: #64748b;
+  --color-border-light: #f1f5f9;
+  --color-border-hover: #e2e8f0;
+  --color-bg-light: #f8fafc;
+  --color-blue-tag: #2563eb;
+  --color-blue-tag-bg: #f0f7ff;
+  --color-blue-tag-border: #bfdbfe;
+  --color-blue-tag-border-light: #dbeafe;
+  --color-overlay-start: rgba(255, 255, 255, 1);
+  --color-overlay-mid-1: rgba(255, 255, 255, 1);
+  --color-overlay-mid-2: rgba(255, 255, 255, 0.95);
+  --color-overlay-mid-3: rgba(255, 255, 255, 0.6);
+  --color-overlay-end: rgba(255, 255, 255, 0);
+  --color-border-card: rgba(255, 255, 255, 0.15);
+  --color-border-card-hover: rgba(255, 255, 255, 0.25);
+  --color-shadow-orange: rgba(255, 100, 51, 0.3);
+  --color-shadow-orange-hover: rgba(255, 100, 51, 0.4);
+  --color-shadow-card: rgba(0, 0, 0, 0.22);
+  --color-shadow-card-hover: rgba(0, 0, 0, 0.3);
+
+  /* Index CSS Colors (Light Mode) */
+  --index-text-light: #6b6375;
+  --index-text-h-light: #08060d;
+  --index-bg-light: #ffffff;
+  --index-border-light: #e5e4e7;
+  --index-code-bg-light: #f4f3ec;
+  --index-accent-light: #aa3bff;
+  --index-accent-bg-light: rgba(170, 59, 255, 0.1);
+  --index-accent-border-light: rgba(170, 59, 255, 0.5);
+  --index-social-bg-light: rgba(244, 243, 236, 0.5);
+  --index-shadow-light-1: rgba(0, 0, 0, 0.1);
+  --index-shadow-light-2: rgba(0, 0, 0, 0.05);
+
+  /* Index CSS Colors (Dark Mode) */
+  --index-text-dark: #9ca3af;
+  --index-text-h-dark: #f3f4f6;
+  --index-bg-dark: #16171d;
+  --index-border-dark: #2e303a;
+  --index-code-bg-dark: #1f2028;
+  --index-accent-dark: #c084fc;
+  --index-accent-bg-dark: rgba(192, 132, 252, 0.15);
+  --index-accent-border-dark: rgba(192, 132, 252, 0.5);
+  --index-social-bg-dark: rgba(47, 48, 58, 0.5);
+  --index-shadow-dark-1: rgba(0, 0, 0, 0.4);
+  --index-shadow-dark-2: rgba(0, 0, 0, 0.25);
+}

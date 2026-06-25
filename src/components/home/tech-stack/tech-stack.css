@@ -1,0 +1,111 @@
+.tech-stack-section {
+  background: var(--color-white);
+  padding: 80px 40px;
+  position: relative;
+  z-index: 4;
+}
+
+.tech-stack-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.tech-stack-header h2 {
+  font-family: 'Outfit', 'Inter', sans-serif;
+  font-size: 2.3rem;
+  line-height: 1.25;
+  font-weight: 700;
+  color: var(--color-text-slate);
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.tech-stack-header span.dot {
+  color: var(--color-primary);
+}
+
+.everything-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text-slate);
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-text-slate);
+  padding-bottom: 6px;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+}
+
+.everything-link:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.everything-link .arrow {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.tech-card {
+  background: var(--color-bg-light);
+  border: 1px solid var(--color-border-light);
+  transition: all 0.25s ease-in-out;
+  box-sizing: border-box;
+}
+
+.tech-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
+  background: var(--color-white);
+  border-color: var(--color-border-hover);
+}
+
+.tech-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  color: var(--color-white);
+}
+
+.icon-svg {
+  width: 24px;
+  height: 24px;
+}
+
+.tech-title {
+  font-family: 'Outfit', 'Inter', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  letter-spacing: -0.5px;
+}
+
+.tech-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.96rem;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+}
+
+.tech-tag {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--color-blue-tag);
+  background: transparent;
+  border: 1.5px solid var(--color-blue-tag-border-light);
+  transition: all 0.15s ease;
+}
+
+.tech-card:hover .tech-tag {
+  border-color: var(--color-blue-tag-border);
+  background: var(--color-blue-tag-bg);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .tech-stack-section {
+    padding: 60px 24px;
+  }
+}
