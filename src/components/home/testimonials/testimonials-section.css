@@ -1,0 +1,360 @@
+/* Testimonials Section Stylesheet */
+
+.testimonials-section {
+  padding: 100px 0;
+  overflow: hidden;
+  background-color: var(--color-white);
+  z-index: 5;
+}
+
+.testimonials-main-layout {
+  position: relative;
+  width: 100%;
+  display: flex;
+  height: 1000px;
+  align-items: center;
+}
+
+/* Left Column: Team image card (absolute on desktop) */
+.testimonials-team-card {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 40%;
+  height: 965px;
+  z-index: 10;
+  border-radius: 0 20px 20px 0;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+}
+
+.testimonials-img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.orange-accent-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-primary);
+  z-index: 11;
+}
+
+.team-photo {
+  /* width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; */
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  /* display: block; */
+}
+
+/* Right Column: Content area (padding to push text right of the team card) */
+.testimonials-content-col {
+  padding-left: calc(40% + 48px);
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials-header {
+  max-width: 700px;
+  margin-bottom: 48px;
+}
+
+.testimonials-title {
+  font-size: 2.75rem;
+  line-height: 1.15;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  letter-spacing: -1.2px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.testimonials-title .orange-dot {
+  color: var(--color-primary);
+}
+
+.testimonials-subtitle {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--color-text-gray);
+  margin-bottom: 24px;
+}
+
+.our-hits-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-text-dark);
+  padding-bottom: 6px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+}
+
+.our-hits-link:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.our-hits-link .hits-arrow {
+  font-size: 1.1rem;
+  line-height: 1;
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.our-hits-link:hover .hits-arrow {
+  transform: translateX(4px);
+}
+
+/* Swiper slider container (negative margin shifts slider left to overlay the team card) */
+.testimonials-slider-container {
+  margin-left: calc(-47% - 48px);
+  width: calc(100% + 28% + 48px);
+  position: relative;
+  z-index: 20;
+  padding: 10px 0 24px;
+}
+
+.testimonials-swiper {
+  overflow: visible !important;
+  /* Premium overflow effect */
+  width: 100%;
+}
+
+.testimonial-slide-item {
+  height: auto;
+  /* Required for flex justify-content-between h-100 to work */
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+  background-color: var(--color-white);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+/* Card Header elements */
+.brand-logo-wrapper {
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo-svg {
+  height: 100%;
+  max-width: 150px;
+}
+
+.arrow-circle-link {
+  color: var(--color-text-dark);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-arrow-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.testimonial-card:hover .arrow-circle-link {
+  transform: translate(3px, -3px);
+  color: var(--color-primary);
+}
+
+/* Card Quote Elements */
+.card-quote-wrapper {
+  flex-grow: 1;
+}
+
+.testimonial-quote {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--color-text-slate);
+  font-weight: 450;
+  margin: 0;
+}
+
+.quote-mark {
+  color: var(--color-primary);
+  font-family: serif;
+  font-size: 1.75rem;
+  font-weight: bold;
+  line-height: 0;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 3px;
+  margin-top: 4px;
+}
+
+/* Card Author Elements */
+.card-author-wrapper {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding-top: 20px;
+}
+
+.author-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+.author-role {
+  font-size: 0.9rem;
+  color: var(--color-text-gray);
+  font-weight: 500;
+}
+
+/* Custom Navigation arrows */
+.testimonials-nav-controls {
+  display: flex;
+  gap: 16px;
+  /* margin-top: 24px; */
+  margin-left: 209px;
+  z-index: 30;
+}
+
+.nav-arrow {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-primary);
+  background-color: transparent;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-arrow-svg {
+  width: 22px;
+  height: 22px;
+}
+
+.nav-arrow:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transform: scale(1.05);
+}
+
+/* Disabled state of nav arrows */
+.nav-arrow.swiper-button-disabled {
+  border-color: #e2e8f0;
+  color: #cbd5e1;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.nav-arrow.swiper-button-disabled:hover {
+  background-color: transparent;
+  color: #cbd5e1;
+  transform: none;
+}
+
+/* Scroll Entrance Animations */
+.animate-slide-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate-slide-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsiveness adjustments */
+@media (max-width: 1399px) {
+  .testimonial-card {
+    min-height: 430px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .testimonials-title {
+    font-size: 2.25rem;
+  }
+
+  .testimonial-card {
+    min-height: 450px;
+    padding: 30px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .testimonials-section {
+    padding: 60px 16px;
+  }
+
+  .testimonials-team-card {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 320px;
+    margin-bottom: 32px;
+  }
+
+  .testimonials-content-col {
+    padding-left: 0;
+  }
+
+  .testimonials-slider-container {
+    margin-left: 0;
+    width: 100%;
+    padding-bottom: 16px;
+  }
+
+  .testimonials-swiper {
+    overflow: hidden !important;
+    /* Prevent sliding outside container boundaries on mobile */
+  }
+
+  .testimonial-card {
+    min-height: 380px;
+  }
+
+  .testimonials-nav-controls {
+    justify-content: center;
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .testimonials-title {
+    font-size: 1.85rem;
+  }
+
+  .testimonials-team-card {
+    height: 240px;
+  }
+
+  .testimonial-card {
+    min-height: 420px;
+  }
+}

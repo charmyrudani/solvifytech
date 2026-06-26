@@ -32,7 +32,6 @@
 }
 
 .hero-content h1 {
-  font-family: 'Outfit', 'Inter', sans-serif;
   font-size: 3.8rem;
   line-height: 1.12;
   font-weight: 700;
@@ -61,7 +60,6 @@
 }
 
 .hero-subtitle {
-  font-family: 'Inter', sans-serif;
   font-size: 1.15rem;
   line-height: 1.6;
   color: var(--color-text-muted);
@@ -89,51 +87,6 @@
   box-shadow: 0 6px 20px var(--color-shadow-orange-hover);
 }
 
-.summary-card {
-  width: 250px;
-  background: linear-gradient(180deg, var(--color-dark-bg-start) 0%, var(--color-dark-bg-end) 100%);
-  color: var(--color-white);
-  border-radius: 12px;
-  padding: 12px 18px;
-  border: 1px solid var(--color-border-card);
-  box-shadow: 0 8px 24px var(--color-shadow-card), inset 0 1px 1px var(--color-border-card);
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-  user-select: none;
-}
-
-.summary-card:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 12px 28px var(--color-shadow-card-hover), inset 0 1px 1px var(--color-border-card-hover);
-  border-color: var(--color-border-card-hover);
-}
-
-.summary-card-sparkle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-white);
-}
-
-.summary-sparkle-svg {
-  width: 24px;
-  height: 24px;
-}
-
-.summary-card-text strong {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--color-white);
-  line-height: 1.2;
-}
-
-.summary-card-text p {
-  margin: 2px 0 0 0;
-  color: var(--color-text-gray);
-  font-size: 0.8rem;
-}
-
 .hero-wave {
   height: 80px;
   z-index: 3;
@@ -152,7 +105,6 @@
 }
 
 .endorsed-title {
-  font-family: 'Outfit', 'Inter', sans-serif;
   font-size: 1.55rem;
   font-weight: 600;
   color: var(--color-text-slate);
@@ -189,7 +141,6 @@
 }
 
 .jnj-logo {
-  font-family: 'Playfair Display', 'Georgia', serif;
   font-weight: 700;
   font-style: italic;
   font-size: 1.3rem;
@@ -204,14 +155,12 @@
 }
 
 .google-logo .logo-wrapper span {
-  font-family: 'Product Sans', 'Inter', sans-serif;
   font-weight: 700;
   font-size: 1.45rem;
   letter-spacing: -0.5px;
 }
 
 .nextroll-logo .logo-wrapper span {
-  font-family: 'Inter', sans-serif;
   font-size: 1.25rem;
   letter-spacing: -0.4px;
 }
@@ -221,7 +170,6 @@
 }
 
 .pinterest-logo .logo-wrapper span {
-  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   letter-spacing: -0.3px;
@@ -233,7 +181,6 @@
 }
 
 .subtext-link {
-  font-family: 'Inter', sans-serif;
   font-size: 0.72rem;
   color: var(--color-primary);
   text-decoration: none;
@@ -264,7 +211,6 @@
 }
 
 .rr-badge span {
-  font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
   font-size: 0.9rem;
 }
@@ -281,7 +227,6 @@
 }
 
 .hp-badge span {
-  font-family: 'Georgia', serif;
   font-weight: bold;
   font-style: italic;
   font-size: 0.9rem;

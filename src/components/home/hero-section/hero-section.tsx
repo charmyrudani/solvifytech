@@ -33,19 +33,6 @@ export default function HeroSection() {
                 <button className="hero-btn">
                   Schedule a Call
                 </button>
-
-                <div className="summary-card d-flex align-items-center gap-3">
-                  <div className="summary-card-sparkle">
-                    <svg className="summary-sparkle-svg" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M7 2L8.5 6.5L13 8L8.5 9.5L7 14L5.5 9.5L1 8L5.5 6.5L7 2Z"/>
-                      <path d="M17 12L18 15L21 16L18 17L17 20L16 17L13 16L16 15L17 12Z"/>
-                    </svg>
-                  </div>
-                  <div className="summary-card-text d-flex flex-column align-items-start">
-                    <strong>Ask AI for a summary</strong>
-                    <p>of BairesDev</p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -54,7 +41,7 @@ export default function HeroSection() {
         {/* Curved Wave at the Bottom */}
         <div className="hero-wave position-absolute bottom-0 start-0 w-100 overflow-hidden">
           <svg viewBox="0 0 1440 120" preserveAspectRatio="none" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,120 C360,60 720,20 1080,60 C1260,75 1380,105 1440,120 L1440,120 L0,120 Z" />
+            {/* <path d="M0,120 C360,60 720,20 1080,60 C1260,75 1380,105 1440,120 L1440,120 L0,120 Z" /> */}
           </svg>
         </div>
       </section>
