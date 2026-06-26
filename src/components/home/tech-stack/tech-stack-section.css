@@ -1,0 +1,262 @@
+.tech-stack-section {
+  background: var(--color-white);
+  padding: 100px 0;
+  position: relative;
+  z-index: 4;
+  overflow: hidden;
+}
+
+.tech-stack-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.tech-stack-header h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--color-text-slate);
+  margin: 0;
+  letter-spacing: -1.2px;
+}
+
+.tech-stack-header span.dot {
+  color: var(--color-primary);
+}
+
+.everything-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text-slate);
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-text-slate);
+  padding-bottom: 6px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+}
+
+.everything-link:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.everything-link .arrow {
+  font-size: 1.1rem;
+  line-height: 1;
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.everything-link:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* Category-Specific Accents */
+/* .tech-card[data-category="frontend"] {
+  --category-color: #ff6433;
+  --category-bg-hover: rgba(255, 100, 51, 0.06);
+  --category-border-light: rgba(255, 100, 51, 0.15);
+}
+.tech-card[data-category="backend"] {
+  --category-color: #212121;
+  --category-bg-hover: rgba(33, 33, 33, 0.06);
+  --category-border-light: rgba(33, 33, 33, 0.15);
+}
+.tech-card[data-category="ai"] {
+  --category-color: #1565c0;
+  --category-bg-hover: rgba(21, 101, 192, 0.06);
+  --category-border-light: rgba(21, 101, 192, 0.15);
+}
+.tech-card[data-category="mobile"] {
+  --category-color: #0284c7;
+  --category-bg-hover: rgba(2, 132, 199, 0.06);
+  --category-border-light: rgba(2, 132, 199, 0.15);
+}
+.tech-card[data-category="qa"] {
+  --category-color: #0f766e;
+  --category-bg-hover: rgba(15, 118, 110, 0.06);
+  --category-border-light: rgba(15, 118, 110, 0.15);
+}
+.tech-card[data-category="cloud"] {
+  --category-color: #16a34a;
+  --category-bg-hover: rgba(22, 163, 74, 0.06);
+  --category-border-light: rgba(22, 163, 74, 0.15);
+} */
+
+.tech-card[data-category="web-development"] {
+  --category-color:#2563EB;
+  --category-bg-hover:rgba(37,99,235,.06);
+  --category-border-light:rgba(37,99,235,.18);
+}
+
+.tech-card[data-category="app-development"] {
+  --category-color:#0EA5E9;
+  --category-bg-hover:rgba(14,165,233,.06);
+  --category-border-light:rgba(14,165,233,.18);
+}
+
+.tech-card[data-category="custom-software"] {
+  --category-color:#7C3AED;
+  --category-bg-hover:rgba(124,58,237,.06);
+  --category-border-light:rgba(124,58,237,.18);
+}
+
+.tech-card[data-category="ui-ux"] {
+  --category-color:#EC4899;
+  --category-bg-hover:rgba(236,72,153,.06);
+  --category-border-light:rgba(236,72,153,.18);
+}
+
+.tech-card[data-category="digital-marketing"] {
+  --category-color:#F97316;
+  --category-bg-hover:rgba(249,115,22,.06);
+  --category-border-light:rgba(249,115,22,.18);
+}
+
+.tech-card[data-category="seo"] {
+  --category-color:#16A34A;
+  --category-bg-hover:rgba(22,163,74,.06);
+  --category-border-light:rgba(22,163,74,.18);
+}
+
+.tech-card[data-category="it-consulting"] {
+  --category-color:#4F46E5;
+  --category-bg-hover:rgba(79,70,229,.06);
+  --category-border-light:rgba(79,70,229,.18);
+}
+
+.tech-card[data-category="maintenance-support"] {
+  --category-color:#DC2626;
+  --category-bg-hover:rgba(220,38,38,.06);
+  --category-border-light:rgba(220,38,38,.18);
+}
+
+.tech-card {
+  background: #f8fafc;
+  border: 1px solid var(--color-border-light);
+  border-radius: 20px;
+  border: 2px solid rgb(236, 236, 236) !important;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+              background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-sizing: border-box;
+}
+
+.tech-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  background: #fbfdff;
+  border-color: var(--category-color) !important;
+}
+
+.tech-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 16px;
+  color: var(--color-white);
+  flex-shrink: 0;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tech-card:hover .tech-icon {
+  transform: scale(1.08);
+}
+
+.icon-svg {
+  width: 28px;
+  height: 28px;
+}
+
+.tech-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  letter-spacing: -0.3px;
+  transition: color 0.3s ease;
+}
+
+.tech-desc {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+.tech-tag {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--category-color);
+  background: transparent;
+  border: 1.5px solid var(--category-border-light);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tech-card:hover .tech-tag {
+  border-color: var(--category-color);
+  background: var(--category-bg-hover);
+}
+
+.tech-tag:hover {
+  background: var(--category-color) !important;
+  color: var(--color-white) !important;
+  border-color: var(--category-color) !important;
+  transform: translateY(-1px);
+}
+
+/* Scroll Reveal Entrance Animations */
+.animate-slide-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate-slide-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-slide-up-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: calc(var(--card-idx) * 0.1s);
+}
+
+.animate-slide-up-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .tech-stack-section {
+    padding: 60px 16px;
+  }
+  
+  .tech-stack-header h2 {
+    font-size: 2rem;
+  }
+  
+  .tech-card {
+    padding: 30px !important;
+  }
+  
+  .tech-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+  }
+  
+  .icon-svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .tech-title {
+    font-size: 1.2rem;
+  }
+}
+

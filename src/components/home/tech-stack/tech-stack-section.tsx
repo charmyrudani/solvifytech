@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import { techStackData, type TechStackCard } from "./tech-stack"
-import "./tech-stack.css"
+import "./tech-stack-section.css"
 
 export default function TechStack() {
   const [isVisible, setIsVisible] = useState(false)
@@ -46,8 +46,8 @@ export default function TechStack() {
       case "ai":
         return (
           <svg viewBox="0 0 24 24" fill="currentColor" className="icon-svg">
-            <path d="M12 2L14.85 9.15L22 12L14.85 14.85L12 22L9.15 14.85L2 12L9.15 9.15L12 2Z"/>
-            <path d="M18 14L19.5 18.5L24 20L19.5 21.5L18 26L16.5 21.5L12 20L16.5 18.5L18 14Z"/>
+            <path d="M12 2L14.85 9.15L22 12L14.85 14.85L12 22L9.15 14.85L2 12L9.15 9.15L12 2Z" />
+            <path d="M18 14L19.5 18.5L24 20L19.5 21.5L18 26L16.5 21.5L12 20L16.5 18.5L18 14Z" />
           </svg>
         )
       case "mobile":
@@ -85,7 +85,7 @@ export default function TechStack() {
           </div>
           <div className="link-area">
             <a href="#" className={`everything-link d-inline-flex align-items-center gap-2 animate-slide-up ${isVisible ? "is-visible" : ""}`}>
-              Everything we do 
+              Everything we do
               <span className="arrow">→</span>
             </a>
           </div>
@@ -93,20 +93,34 @@ export default function TechStack() {
 
         <div className="row g-4">
           {techStackData.map((card, idx) => (
-            <div 
-              className={`col-12 col-md-6 col-lg-4 d-flex animate-slide-up-card ${isVisible ? "is-visible" : ""}`} 
+            <div
+              className={`col-12 col-md-6 col-lg-4 d-flex animate-slide-up-card ${isVisible ? "is-visible" : ""}`}
               key={card.id}
               style={{ "--card-idx": idx } as React.CSSProperties}
             >
-              <div 
+              {/* <div 
                 className="tech-card d-flex flex-column align-items-start p-5 w-100 h-100 rounded-4"
                 data-category={card.id}
+              > */}
+              <div
+                className="tech-card d-flex flex-column align-items-start p-5 w-100 h-100 rounded-4"
+                style={
+                  {
+                    "--category-color": card.color,
+                    "--category-border-light": `${card.color}30`,
+                    "--category-bg-hover": `${card.color}10`,
+                  } as React.CSSProperties
+                }
               >
                 <div className="card-header-flex mb-3 d-flex flex-row flex-md-column align-items-center align-items-md-start gap-3 w-100">
-                  <div className="tech-icon d-flex align-items-center justify-content-center" style={{ backgroundColor: card.color }}>
-                    {renderIcon(card.iconType)}
+                  <div className="d-flex gap-3 align-items-center justify-content-center">
+
+                    <div className="tech-icon d-flex align-items-center justify-content-center" style={{ backgroundColor: card.color }}>
+                      {renderIcon(card.iconType)}
+                    </div>
+                    <h3 className="tech-title mt-0 md-3 mb-0">{card.title}</h3>
+
                   </div>
-                  <h3 className="tech-title mt-0 mt-md-3 mb-0">{card.title}</h3>
                 </div>
                 <p className="tech-desc mb-4">{card.description}</p>
                 <div className="tech-tags d-flex flex-wrap gap-2 mt-auto">
