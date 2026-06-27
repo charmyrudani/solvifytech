@@ -4,8 +4,10 @@ export interface TechStackCard {
   description: string;
   iconType: "frontend" | "backend" | "ai" | "mobile" | "qa" | "cloud";
   tags: string[];
-  color: string;
+  // color: string;
 }
+
+export const color = "#1565c0";
 
 export const techStackData: TechStackCard[] = [
   {
@@ -15,7 +17,7 @@ export const techStackData: TechStackCard[] = [
       "Build fast, responsive, and scalable websites tailored to your business goals.",
     iconType: "frontend",
     tags: ["React", "Next.js", "HTML", "CSS", "JavaScript", "Web Apps"],
-    color: "#e65100",
+    // color: "#e65100",
   },
   {
     id: "app-development",
@@ -24,7 +26,7 @@ export const techStackData: TechStackCard[] = [
       "Develop intuitive Android, iOS, and cross-platform mobile applications.",
     iconType: "mobile",
     tags: ["Android", "iOS", "Flutter", "React Native", "Mobile Apps"],
-    color: "#0284c7",
+    // color: "#0284c7",
   },
   {
     id: "custom-software",
@@ -33,7 +35,7 @@ export const techStackData: TechStackCard[] = [
       "Deliver scalable software solutions designed around your unique business needs.",
     iconType: "backend",
     tags: ["CRM", "ERP", "Enterprise", "Automation", "SaaS", "API"],
-    color: "#212121",
+    // color: "#212121",
   },
   {
     id: "ui-ux",
@@ -42,7 +44,7 @@ export const techStackData: TechStackCard[] = [
       "Design intuitive, user-focused interfaces that deliver exceptional digital experiences.",
     iconType: "ai",
     tags: ["UI Design", "UX Research", "Wireframes", "Figma", "Prototyping"],
-    color: "#1565c0",
+    // color: "#1565c0",
   },
   {
     id: "digital-marketing",
@@ -51,7 +53,7 @@ export const techStackData: TechStackCard[] = [
       "Grow your brand with strategic digital marketing that drives engagement and conversions.",
     iconType: "qa",
     tags: ["Social Media", "Google Ads", "Content Marketing", "Branding"],
-    color: "#0f766e",
+    // color: "#0f766e",
   },
   {
     id: "seo",
@@ -60,7 +62,7 @@ export const techStackData: TechStackCard[] = [
       "Improve your search rankings and increase organic traffic with proven SEO strategies.",
     iconType: "cloud",
     tags: ["On-Page SEO", "Technical SEO", "Keyword Research", "Link Building"],
-    color: "#16a34a",
+    // color: "#16a34a",
   },
   {
     id: "it-consulting",
@@ -69,7 +71,7 @@ export const techStackData: TechStackCard[] = [
       "Provide expert technology consulting to accelerate digital transformation.",
     iconType: "backend",
     tags: ["Strategy", "Cloud", "Architecture", "Technology Consulting"],
-    color: "#7c3aed",
+    // color: "#7c3aed",
   },
   {
     id: "maintenance-support",
@@ -78,6 +80,6 @@ export const techStackData: TechStackCard[] = [
       "Keep your applications secure, updated, and running smoothly with ongoing support.",
     iconType: "qa",
     tags: ["Bug Fixes", "Monitoring", "Updates", "Security", "24/7 Support"],
-    color: "#ea580c",
+    // color: "#ea580c",
   },
 ];

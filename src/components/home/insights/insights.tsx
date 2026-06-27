@@ -59,7 +59,7 @@ export default function Insights() {
     <section className="insights">
       <div className="insights-container">
 
-        <div className="heading">
+        <div className="heading"> 
           <h2>Latest insights</h2>
 
           <div className="custom-nav">

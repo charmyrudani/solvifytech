@@ -3,6 +3,7 @@ import TechStack from "./tech-stack/tech-stack-section"
 import TechMarquee from "./tech-stack/tech-marquee"
 import TestimonialsSection from "./testimonials/testimonials-section"
 import Insights from "./insights/insights"
+import Team from "./team-members/team"
 
 export default function Home() {
     return (
@@ -12,7 +13,7 @@ export default function Home() {
             <TechMarquee />
             <TestimonialsSection />
             <Insights />
-            {/* <Team/> */}
+            <Team/>
         </>
     )
 }

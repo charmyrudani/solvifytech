@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react"
-import { techStackData, type TechStackCard } from "./tech-stack"
+import { color, techStackData, type TechStackCard } from "./tech-stack"
 import "./tech-stack-section.css"
 
 export default function TechStack() {
@@ -106,16 +106,16 @@ export default function TechStack() {
                 className="tech-card d-flex flex-column align-items-start p-5 w-100 h-100 rounded-4"
                 style={
                   {
-                    "--category-color": card.color,
-                    "--category-border-light": `${card.color}30`,
-                    "--category-bg-hover": `${card.color}10`,
+                    "--category-color": color,
+                    "--category-border-light": `${color}30`,
+                    "--category-bg-hover": `${color}10`,
                   } as React.CSSProperties
                 }
               >
                 <div className="card-header-flex mb-3 d-flex flex-row flex-md-column align-items-center align-items-md-start gap-3 w-100">
                   <div className="d-flex gap-3 align-items-center justify-content-center">
 
-                    <div className="tech-icon d-flex align-items-center justify-content-center" style={{ backgroundColor: card.color }}>
+                    <div className="tech-icon d-flex align-items-center justify-content-center" style={{ backgroundColor: color }}>
                       {renderIcon(card.iconType)}
                     </div>
                     <h3 className="tech-title mt-0 md-3 mb-0">{card.title}</h3>
