@@ -1,11 +1,11 @@
 import { useState, useEffect, useRef } from 'react';
 import './team.css';
 
-import dev1 from '../../../assets/image/dev1.avif';
-import dev2 from '../../../assets/image/dev2.avif';
-import dev3 from '../../../assets/image/dev3.avif';
-import dev4 from '../../../assets/image/dev4.avif';
-import dev5 from '../../../assets/image/dev5.avif';
+import dev1 from '/images/hero-section/dev1.avif';
+import dev2 from '/images/hero-section/dev2.avif';
+import dev3 from '/images/hero-section/dev3.avif';
+import dev4 from '/images/hero-section/dev4.avif';
+import dev5 from '/images/hero-section/dev5.avif';
 
 export default function Team() {
   const [isCollapsed, setIsCollapsed] = useState(false);

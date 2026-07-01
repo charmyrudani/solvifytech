@@ -1,0 +1,202 @@
+/* ── Section ── */
+.dt-section {
+  padding: 90px 0 100px;
+  background: #fff;
+}
+
+/* ── Header ── */
+.dt-header {
+  /* max-width: 740px; */
+  margin-bottom: 52px;
+}
+
+.dt-tag {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+.dt-title {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: #0f172a;
+  margin: 0 0 22px;
+}
+
+.dt-description {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #374151;
+  margin: 0;
+  /* max-width: 720px; */
+}
+
+@media (max-width: 767.98px) {
+  .dt-title {
+    font-size: 34px;
+  }
+
+  .dt-section {
+    padding: 60px 0;
+  }
+}
+
+/* ── Grid ── */
+.dt-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .dt-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 599.98px) {
+  .dt-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Card ── */
+.dt-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 24px 22px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.dt-card:hover {
+  box-shadow: 0 10px 32px rgba(114, 114, 114, 0.08);
+  transform: translateY(-1px);
+}
+
+/* ── Card Top ── */
+.dt-card-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.dt-avatar-wrap {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #e5e7eb;
+}
+
+.dt-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.dt-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.dt-role {
+  font-size: 17px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.25;
+}
+
+.dt-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #374151;
+  line-height: 1.3;
+}
+
+.dt-experience {
+  font-size: 13px;
+  font-weight: 400;
+  color: #9ca3af;
+  line-height: 1.3;
+}
+
+/* ── Tech Badges ── */
+.dt-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.dt-tech-badge {
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 4px 12px;
+  line-height: 1.5;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.dt-card:hover {
+  border-color: #10b981;
+}
+
+.dt-tech-badge:hover {
+  cursor: pointer;
+  border-color: #10b981;
+  color: #10b981;
+}
+
+/* ── Certifications ── */
+.dt-cert-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.dt-cert-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.dt-cert-icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1.5px solid #10b981;
+  color: #10b981;
+  font-size: 9px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.dt-cert-text {
+  font-size: 13.5px;
+  font-weight: 400;
+  /* color: #10b981; */
+  line-height: 1.5;
+}

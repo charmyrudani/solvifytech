@@ -1,0 +1,183 @@
+.so-section {
+  padding: 90px 0 100px;
+  background: #fff;
+}
+
+.so-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+@media (max-width: 991.98px) {
+  .so-section {
+    padding: 60px 0;
+  }
+  .so-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+.so-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.so-tag {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 18px;
+}
+
+.so-title {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.18;
+  letter-spacing: -0.5px;
+  color: #0f172a;
+  margin: 0 0 20px;
+}
+
+@media (max-width: 767.98px) {
+  .so-title {
+    font-size: 28px;
+  }
+}
+
+.so-description {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #4b5563;
+  margin: 0 0 28px;
+  max-width: 480px;
+}
+
+.so-image-wrap {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.07);
+  flex-shrink: 0;
+}
+
+.so-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.so-image-wrap:hover .so-image {
+  transform: scale(1.03);
+}
+
+.so-right {
+  padding-top: 6px;
+}
+
+.so-accordion-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.so-accordion-item {
+  border-left: 3px solid #e2e8f0;
+  padding-left: 20px;
+  margin-bottom: 0;
+  transition: border-color 0.25s ease;
+}
+
+.so-accordion-item + .so-accordion-item {
+  margin-top: 16px;
+}
+
+.so-accordion-item--active {
+  border-left-color: #10b981;
+}
+
+/* ── Trigger button ── */
+.so-accordion-trigger {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  cursor: pointer;
+  text-align: left;
+  transition: color 0.22s ease;
+  color: #374151;
+}
+
+.so-accordion-bar {
+  display: none;
+}
+
+.so-accordion-trigger-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  transition: color 0.22s ease;
+  color: inherit;
+}
+
+.so-accordion-trigger:hover .so-accordion-trigger-title {
+  color: #10b981;
+}
+
+.so-accordion-item--active .so-accordion-trigger {
+  color: #0f172a;
+}
+
+.so-accordion-item--active .so-accordion-trigger-title {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.so-accordion-collapse {
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.38s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.3s ease;
+  opacity: 0;
+}
+
+.so-accordion-item--active .so-accordion-collapse {
+  opacity: 1;
+}
+
+.so-accordion-body {
+  padding: 4px 0 18px;
+  animation: soFadeSlideIn 0.35s ease-out both;
+}
+
+@keyframes soFadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.so-accordion-paragraph {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #6b7280;
+  margin: 0 0 12px;
+}
+
+.so-accordion-paragraph:last-child {
+  margin-bottom: 0;
+}

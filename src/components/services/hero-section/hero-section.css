@@ -1,0 +1,264 @@
+/* Services Hero Container */
+.services-hero-container {
+  background-color: #f3f4f6; /* Subtle warm light gray background as seen in mockups */
+  color: var(--color-text-dark);
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+  position: relative;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+}
+
+/* Breadcrumbs */
+.services-breadcrumbs {
+  font-size: 0.85rem;
+}
+
+.breadcrumb-item{
+  font-size: 15px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  color: var(--color-text-gray);
+  padding: 0 8px;
+}
+
+.breadcrumb-link {
+  color: var(--color-text-slate);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-link:hover {
+  color: var(--color-primary);
+}
+
+.home-icon-link svg {
+  vertical-align: middle;
+  /* margin-top: -2px; */
+}
+
+/* Hero Content */
+.services-hero-tag {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  display: block;
+}
+
+.services-hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #111827; /* Dark black */
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 991px) {
+  .services-hero-title {
+    font-size: 2.5rem;
+  }
+}
+
+.services-hero-desc {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  max-width: 600px;
+}
+
+/* Engineer Showcase Card */
+.engineer-showcase-wrapper {
+  max-width: 480px;
+  width: 100%;
+}
+
+.engineer-card {
+  background: var(--color-white);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.engineer-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.engineer-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: var(--color-border-light);
+}
+
+.engineer-role {
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.client-label {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.engineer-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.engineer-exp {
+  font-size: 0.85rem;
+}
+
+.client-logo-wrapper {
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+/* Client Badges */
+.client-logo-badge {
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  color: #1f2937;
+}
+
+.ibm-badge {
+  color: #006699;
+  letter-spacing: 0.1em;
+}
+
+.instructure-badge {
+  font-size: 0.75rem;
+  color: #e02424;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.instructure-icon {
+  font-size: 0.65rem;
+}
+
+.bbva-badge {
+  color: #004481;
+}
+
+/* Slider Dots */
+.dot-btn {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #d1d5db;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dot-btn.active {
+  background-color: #111827;
+  width: 16px;
+  border-radius: 4px;
+}
+
+/* AI Tools */
+.ai-tools-section {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 20px;
+}
+
+.ai-tools-title {
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.ai-tools-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ai-tool-item {
+  color: #9ca3af;
+  transition: color 0.2s ease;
+}
+
+.ai-tool-item:hover {
+  color: #4b5563;
+}
+
+.tool-logo-svg {
+  height: 32px;
+  width: 32px;
+}
+
+.tool-logo-svg.tabnine-logo {
+  color: #ef4444; /* Tabnine Red */
+}
+
+/* Contact Form Card */
+.contact-form-card {
+  background: var(--color-white);
+  border-radius: 24px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  color: #111827;
+}
+
+.form-group input,
+.form-group textarea {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  color: #1f2937;
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(255, 100, 51, 0.15);
+  outline: none;
+}
+
+.btn-submit-project {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 8px;
+  color: var(--color-white);
+  font-size: 1rem;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-submit-project:hover {
+  background-color: var(--color-primary-hover);
+  box-shadow: 0 10px 15px -3px var(--color-shadow-orange);
+  transform: translateY(-1px);
+}
+
+.btn-submit-project:active {
+  transform: translateY(0);
+}
+
+.success-checkmark {
+  color: #10b981;
+}

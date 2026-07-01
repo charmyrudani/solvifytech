@@ -1,14 +1,16 @@
 import "./insights.css";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-
 import "swiper/css";
 import "swiper/css/navigation";
+import blog1 from '/images/hero-section/blog1.png'
+import blog2 from '/images/hero-section/blog2.png'
+import blog3 from '/images/hero-section/blog3.png'
+import blog4 from '/images/hero-section/blog4.png'
 
 const insights = [
   {
-    image: "/images/blog1.png",
+    image: blog1,
     category: "Article",
     tag: "CMS",
     title: "Why your website project is actually a content strategy problem",
@@ -17,7 +19,7 @@ const insights = [
     darkTag: false,
   },
   {
-    image: "/images/blog2.png",
+    image: blog2,
     category: "Article",
     tag: "AI + data",
     title: "AI in eCommerce: Start with the friction",
@@ -26,7 +28,7 @@ const insights = [
     darkTag: false,
   },
   {
-    image: "/images/blog3.png",
+    image: blog3,
     category: "Article",
     tag: "AI + data",
     title: "Fireside chat with Cost Plus Drugs: Building technology for mission-driven businesses",
@@ -35,7 +37,7 @@ const insights = [
     darkTag: true,
   },
   {
-    image: "/images/blog4.png",
+    image: blog4,
     category: "Article",
     tag: "Unified commerce",
     title: "Codal wins the 2026 Connected Commerce Award",
@@ -44,7 +46,7 @@ const insights = [
     darkTag: true,
   },
   {
-    image: "/images/blog1.png",
+    image: blog1,
     category: "Article",
     tag: "CMS",
     title: "Another Article",

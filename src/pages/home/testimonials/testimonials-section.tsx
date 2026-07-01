@@ -4,8 +4,8 @@ import { Navigation } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
 import 'swiper/css';
 import './testimonials-section.css';
+import testimonial from '/images/hero-section/testimonials_bg1.png'
 
-// Testimonial details interface
 interface Testimonial {
   id: number;
   brandName: string;
@@ -132,7 +132,7 @@ export default function TestimonialsSection() {
             <div className="testimonials-img-container">
               <div className="orange-accent-line"></div>
               <img 
-                src="/src/assets/image/testimonials_bg1.png" 
+                src={testimonial}
                 alt="BairesDev Team Collaboration" 
                 className="team-photo"
               />

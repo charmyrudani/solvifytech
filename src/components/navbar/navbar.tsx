@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import logo from './../../assets/image/solvify-tech-black.webp';
+import logo from '/images/logo/solvify-tech-black.webp';
 import './navbar.css';
+import { Paths } from '../../constants/route-paths.constants';
 
 const Navbar: React.FC = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -11,11 +12,13 @@ const Navbar: React.FC = () => {
   const location = useLocation();
 
   // Close menus when route changes
-  useEffect(() => {
+  const [prevPathname, setPrevPathname] = useState(location.pathname);
+  if (location.pathname !== prevPathname) {
+    setPrevPathname(location.pathname);
     setActiveDropdown(null);
     setIsMobileMenuOpen(false);
     setMobileActiveAccordion(null);
-  }, [location]);
+  }
 
   // Track scroll position to change background transparency or shadow
   useEffect(() => {
@@ -83,7 +86,7 @@ const Navbar: React.FC = () => {
 
                 {/* SERVICES MEGAMENU */}
                 <div className={`megamenu-dropdown ${activeDropdown === 'services' ? 'visible' : ''}`}>
-                  <div className="megamenu-inner-grid">
+                  <div className="megamenu-inner-grid megamenu-services-grid">
                     {/* Left Panel */}
                     <div className="megamenu-left-panel">
                       <h3 className="megamenu-title">Services</h3>
@@ -108,47 +111,50 @@ const Navbar: React.FC = () => {
                       </div>
                     </div>
 
-                    {/* Middle Panel */}
                     <div className="megamenu-middle-panel">
                       <span className="megamenu-section-header">Top Services</span>
-                      <div className="megamenu-links-grid grid-cols-2">
-                        <Link to="/services" className="grid-link">AI Development</Link>
-                        <Link to="/services" className="grid-link">Android App Development</Link>
-                        <Link to="/services" className="grid-link">Back-end Development</Link>
-                        <Link to="/services" className="grid-link">Business Intelligence</Link>
-                        <Link to="/services" className="grid-link">CMS Development</Link>
-                        <Link to="/services" className="grid-link">Data Engineering</Link>
-                        <Link to="/services" className="grid-link">Cryptocurrency & Blockchain</Link>
-                        <Link to="/services" className="grid-link">eCommerce Development</Link>
-                        <Link to="/services" className="grid-link">Front-end Development</Link>
-                        <Link to="/services" className="grid-link">iOS App Development</Link>
-                        <Link to="/services" className="grid-link">Machine Learning</Link>
-                        <Link to="/services" className="grid-link">Mobile App Development</Link>
-                        <Link to="/services" className="grid-link">QA Testing & Automation</Link>
-                        <Link to="/services" className="grid-link">SaaS Development</Link>
-                        <Link to="/services" className="grid-link">UX/UI Design</Link>
-                        <Link to="/services" className="grid-link">Web Development</Link>
+                      <div className="megamenu-links-list">
+                        <Link to={`${Paths.services}/${Paths.aiDevelopment}`} className="grid-link">AI Development</Link>
+                        <Link to={`${Paths.services}/${Paths.shopifyDevelopment}`} className="grid-link">Shopify Development</Link>
+                        <Link to={`${Paths.services}/${Paths.erpDevelopment}`} className="grid-link">ERP Development</Link>
+                        <Link to={`${Paths.services}/${Paths.webDevelopment}`} className="grid-link">Web Development</Link>
+                        <Link to={`${Paths.services}/${Paths.appDevelopment}`} className="grid-link">App Development</Link>
+                        <Link to={`${Paths.services}/${Paths.uiUxDesign}`} className="grid-link">UI/UX Design</Link>
+                        <Link to={`${Paths.services}/${Paths.cloudDevOps}`} className="grid-link">Cloud & DevOps</Link>
                       </div>
-                      <Link to="/services" className="view-all-link">
-                        <span>All Services</span>
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                          <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
-                        </svg>
-                      </Link>
                     </div>
 
-                    {/* Right Panel */}
                     <div className="megamenu-right-panel">
-                      <span className="megamenu-section-header">Enterprise Focused</span>
+                      <span className="megamenu-section-header">AI & Automation</span>
                       <div className="megamenu-links-list">
-                        <Link to="/services" className="grid-link">Backup Solutions</Link>
-                        <Link to="/services" className="grid-link">Big Data</Link>
-                        <Link to="/services" className="grid-link">Cloud Applications</Link>
-                        <Link to="/services" className="grid-link">CRM Systems</Link>
-                        <Link to="/services" className="grid-link">Cybersecurity</Link>
-                        <Link to="/services" className="grid-link">DevOps</Link>
-                        <Link to="/services" className="grid-link">Digital Transformation</Link>
-                        <Link to="/services" className="grid-link">ERP Development</Link>
+                        <Link to={`${Paths.services}/${Paths.aiAgents}`} className="grid-link">AI Agents</Link>
+                        <Link to={`${Paths.services}/${Paths.chatbots}`} className="grid-link">Chatbots</Link>
+                        <Link to={`${Paths.services}/${Paths.workflowAutomation}`} className="grid-link">Workflow Automation</Link>
+                        <Link to={`${Paths.services}/${Paths.openaiIntegration}`} className="grid-link">OpenAI Integration</Link>
+                        <Link to={`${Paths.services}/${Paths.n8nAutomation}`} className="grid-link">n8n Automation</Link>
+                        <Link to={`${Paths.services}/${Paths.whatsappAutomation}`} className="grid-link">WhatsApp Automation</Link>
+                        <Link to={`${Paths.services}/${Paths.aiVoiceBots}`} className="grid-link">AI Voice Bots</Link>
+                      </div>
+                    </div><div className="megamenu-right-panel">
+                      <span className="megamenu-section-header">Enterprise</span>
+                      <div className="megamenu-links-list">
+                        <Link to={`${Paths.services}/${Paths.erpDevelopment}`} className="grid-link">ERP Development</Link>
+                        <Link to={`${Paths.services}/${Paths.crmSystems}`} className="grid-link">CRM Systems</Link>
+                        <Link to={`${Paths.services}/${Paths.saasDevelopment}`} className="grid-link">SaaS Development</Link>
+                        <Link to={`${Paths.services}/${Paths.digitalTransformation}`} className="grid-link">Digital Transformation</Link>
+                        <Link to={`${Paths.services}/${Paths.businessIntelligence}`} className="grid-link">Business Intelligence</Link>
+                        <Link to={`${Paths.services}/${Paths.cloudMigration}`} className="grid-link">Cloud Migration</Link>
+                        <Link to={`${Paths.services}/${Paths.devOpsConsulting}`} className="grid-link">DevOps Consulting</Link>
+                      </div>
+                    </div><div className="megamenu-right-panel">
+                      <span className="megamenu-section-header">Marketing</span>
+                      <div className="megamenu-links-list">
+                        <Link to={`${Paths.services}/${Paths.seo}`} className="grid-link">SEO</Link>
+                        <Link to={`${Paths.services}/${Paths.linkedinMarketing}`} className="grid-link">LinkedIn Marketing</Link>
+                        <Link to={`${Paths.services}/${Paths.googleAds}`} className="grid-link">Google Ads</Link>
+                        <Link to={`${Paths.services}/${Paths.socialMediaMarketing}`} className="grid-link">Social Media Marketing</Link>
+                        <Link to={`${Paths.services}/${Paths.emailMarketing}`} className="grid-link">Email Marketing</Link>
+                        <Link to={`${Paths.services}/${Paths.leadGeneration}`} className="grid-link">Lead Generation</Link>
                       </div>
                     </div>
                   </div>
@@ -448,7 +454,7 @@ const Navbar: React.FC = () => {
                   <Link to="/services" className="mobile-sublink">Web Development</Link>
                   <Link to="/services" className="mobile-sublink">Mobile App Development</Link>
                   <Link to="/services" className="mobile-sublink">QA Testing & Automation</Link>
-                  <Link to="/services" className="mobile-sublink">UX/UI Design</Link>
+                  <Link to="/services/ux-design" className="mobile-sublink">UX/UI Design</Link>
                 </div>
               </div>
             </li>

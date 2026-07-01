@@ -189,6 +189,27 @@
   grid-template-columns: 340px 1fr;
 }
 
+/* Services Megamenu Grid Override (All 4 columns + left panel in a single row) */
+.megamenu-inner-grid.megamenu-services-grid {
+  grid-template-columns: 280px repeat(4, minmax(0, 1fr));
+}
+
+.megamenu-services-grid .megamenu-left-panel {
+  padding: 40px 24px 48px 40px;
+}
+
+.megamenu-services-grid .megamenu-middle-panel {
+  padding: 40px 16px 48px 16px;
+}
+
+.megamenu-services-grid .megamenu-right-panel {
+  padding: 40px 16px 48px 16px;
+}
+
+.megamenu-services-grid .megamenu-right-panel:last-child {
+  padding: 40px 40px 48px 16px;
+}
+
 /* Left Sidebar Panel of Megamenu */
 .megamenu-left-panel {
   background-color: var(--color-bg-light);

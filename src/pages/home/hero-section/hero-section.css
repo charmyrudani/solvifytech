@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   min-height: 92vh;
-  background: url("../../../assets/image/hero_image.png") center right/cover no-repeat;
+  background: url("/images/hero-section/hero_image.png") center right/cover no-repeat;
   display: flex;
   align-items: center;
   overflow: hidden;
