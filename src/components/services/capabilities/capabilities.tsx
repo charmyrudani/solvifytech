@@ -8,7 +8,7 @@ export default function Capabilities({ data }: any) {
   const activeCapability = data.capabilities[activeIndex];
 
   return (
-    <div className="capabilities-section py-5">
+    <div className="capabilities-section">
       <div className="container">
         <div className="capabilities-header mb-5">
           <h6 className="text-uppercase fw-bold capabilities-label">{data.label}</h6>

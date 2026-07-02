@@ -52,6 +52,16 @@ export default function DevelopmentTeam({ data }: any) {
               )}
             </div>
           ))}
+          
+          <div className="dt-cta-card">
+            <div className="dt-cta-avatars">
+              {data.engineers?.slice(0, 5).map((eng: any, idx: number) => (
+                <img key={idx} src={eng.image} alt={eng.name} className="dt-cta-avatar" />
+              ))}
+            </div>
+            <h3 className="dt-cta-text">Onboard a backend development team in weeks, not months.</h3>
+            <button className="dt-cta-btn">Talk to an expert</button>
+          </div>
         </div>
       </div>
     </section>

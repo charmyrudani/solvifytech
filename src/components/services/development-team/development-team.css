@@ -1,6 +1,6 @@
 /* ── Section ── */
 .dt-section {
-  padding: 90px 0 100px;
+  padding: 90px;
   background: #fff;
 }
 
@@ -22,7 +22,7 @@
 
 .dt-title {
   font-size: 44px;
-  font-weight: 900;
+  /* font-weight: 600; */
   line-height: 1.1;
   letter-spacing: -1px;
   color: #0f172a;
@@ -103,6 +103,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
   display: block;
 }
 
@@ -114,7 +115,7 @@
 
 .dt-role {
   font-size: 17px;
-  font-weight: 800;
+  font-weight: 700;
   color: #0f172a;
   line-height: 1.25;
 }
@@ -197,6 +198,64 @@
 .dt-cert-text {
   font-size: 13.5px;
   font-weight: 400;
-  /* color: #10b981; */
   line-height: 1.5;
+}
+
+/* ── CTA Card ── */
+.dt-cta-card {
+  background: #e6f7f0;
+  border-radius: 14px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.dt-cta-avatars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dt-cta-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #e6f7f0;
+  object-fit: cover;
+  object-position: top;
+  margin-left: -12px;
+}
+
+.dt-cta-avatar:first-child {
+  margin-left: 0;
+}
+
+.dt-cta-text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #0f172a;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.dt-cta-btn {
+  background: #10b981;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  width: 100%;
+  margin-top: auto;
+}
+
+.dt-cta-btn:hover {
+  background: #059669;
 }

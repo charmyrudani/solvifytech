@@ -41,7 +41,7 @@
 
 /* ── Section ── */
 .is-section {
-  padding: 90px 0 100px;
+  padding: 90px;
   background: #fff;
 }
 
@@ -63,7 +63,7 @@
 
 .is-title {
   font-size: 40px;
-  /* font-weight: 800; */
+  /* font-weight: 600; */
   line-height: 1.18;
   /* letter-spacing: -0.5px; */
   color: #0f172a;

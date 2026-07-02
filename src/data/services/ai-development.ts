@@ -1,8 +1,13 @@
 import dev1 from '/images/hero-section/dev1.avif'
-import dev2 from '/images/hero-section/dev1.avif'
-import dev3 from '/images/hero-section/dev1.avif'
-import dev4 from '/images/hero-section/dev1.avif'
-import dev5 from '/images/hero-section/dev1.avif'
+import dev2 from '/images/hero-section/dev2.avif'
+import dev3 from '/images/hero-section/dev3.avif'
+import dev4 from '/images/hero-section/dev4.avif'
+import dev5 from '/images/hero-section/dev5.avif'
+import bbva from '/images/hero-section/bbva.svg'
+import johnson from '/images/hero-section/johnson.svg'
+import adobe from '/images/hero-section/adobe.svg'
+import siriusxm from '/images/hero-section/siriusxm.svg'
+import motorolla from '/images/hero-section/motorolla.svg'
 import industryImage from "/images/services/industry.png"
 import powerBI from "/images/tool-tech/powerbi.png"
 import aiService from '/images/services/ai-service.png';
@@ -73,6 +78,7 @@ const aiDevelopment = {
         experience: "11 years of experience",
         image: dev1,
         technologies: ["Python", "Node.js", "PostgreSQL"],
+        company: bbva,
         certifications: [
           "AWS Certified Solutions Architect – Professional",
           "Microsoft Certified: Azure Developer Associate",
@@ -83,6 +89,7 @@ const aiDevelopment = {
         name: "Ricardo F.",
         experience: "14 years of experience",
         image: dev2,
+        company: johnson,
         technologies: ["Kubernetes", "Terraform", "AWS"],
         certifications: [
           "AWS Certified Solutions Architect – Professional",
@@ -94,6 +101,7 @@ const aiDevelopment = {
         name: "Andrés M.",
         experience: "9 years of experience",
         image: dev3,
+        company: adobe,
         technologies: ["PostgreSQL", "MongoDB", "Redis"],
         certifications: [
           "MongoDB Associate DBA",
@@ -106,6 +114,7 @@ const aiDevelopment = {
         name: "Sophia K.",
         experience: "10 years of experience",
         image: dev4,
+        company: siriusxm,
         technologies: ["REST API", "GraphQL", "Node.js"],
         certifications: [
           "Postman API Fundamentals",
@@ -117,6 +126,7 @@ const aiDevelopment = {
         name: "Daniel P.",
         experience: "12 years of experience",
         image: dev5,
+        company: motorolla,
         technologies: ["Docker", "Kubernetes", "CI/CD"],
         certifications: [
           "Certified Kubernetes Administrator (CKA)",

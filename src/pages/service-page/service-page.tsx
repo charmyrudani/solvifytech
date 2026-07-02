@@ -6,6 +6,7 @@ import DevelopmentTeam from "../../components/services/development-team/developm
 import IndustriesSolutions from "../../components/services/industries-solutions/industries-solutions";
 import AIExperts from "../../components/services/ai-experts/ai-experts";
 import Capabilities from "../../components/services/capabilities/capabilities";
+import ProjectBanner from "../../components/services/project-banner/project-banner";
 
 export default function ServicePage() {
     const { serviceId } = useParams();
@@ -24,6 +25,7 @@ export default function ServicePage() {
             <IndustriesSolutions data={data.industriesSolutions}/>
             <AIExperts/>
             <Capabilities data={data.capabilities} />
+            <ProjectBanner data={data.hero}/>
         </>
     );
 }

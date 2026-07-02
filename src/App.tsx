@@ -12,7 +12,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          {/* <Route path={Paths.services} element={<Services />} /> */}
           <Route path={`${Paths.services}/:serviceId`} element={<ServicePage />} />
         </Route>
       </Routes>

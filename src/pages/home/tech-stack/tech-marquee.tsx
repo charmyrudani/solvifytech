@@ -41,12 +41,12 @@ export default function TechMarquee() {
           </div>
         </div>
 
-        <div className="repertoire-link-area mt-4">
+        {/* <div className="repertoire-link-area mt-4">
           <a href="#" className="repertoire-link d-inline-flex align-items-center gap-2">
             Our full repertoire 
             <span className="arrow">→</span>
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   )
