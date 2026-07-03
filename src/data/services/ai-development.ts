@@ -18,8 +18,9 @@ const aiDevelopment = {
   hero: {
     serviceName: "AI Development",
     tagline: "AI DEVELOPMENT SERVICES",
-    title: "Build intelligent solutions that make your business faster, smarter, and more efficient.",
-    description: "Our AI development services help businesses automate tasks, improve decisions, and create smarter digital experiences. From custom AI tools to business automation systems, Solvifytech builds practical AI solutions designed around real workflows and measurable business value. "
+    title: "Empower your business with intelligent AI solutions that automate work, improve decisions, and unlock new opportunities.",
+    description:
+      "From custom AI applications and machine learning models to intelligent automation and business assistants, Solvifytech builds AI solutions that streamline operations, enhance customer experiences, and help organizations scale with confidence."
   },
 
   serviceOverview: {
@@ -68,70 +69,55 @@ const aiDevelopment = {
   },
 
   developmentTeam: {
-    tag: "OUR BACKEND DEVELOPMENT TEAMS",
-    title: "Meet the backend development experts behind our best work.",
-    description: "Behind every successful backend solution is a highly specialized team. That's why we have experts for every stage of backend development, from architecture design and API development to database optimization and cloud deployment.",
+    tag: "OUR AI DEVELOPMENT TEAM",
+    title: "Meet the minds shaping artificial intelligence.",
+    description: "Our core AI development team brings decades of combined experience in machine learning, neural networks, and deep learning models to build transformative AI applications tailored to your business needs.",
     engineers: [
       {
-        role: "Sr. Backend Engineer",
-        name: "Mateo L.",
+        role: "Sr. AI Engineer",
+        name: "Michael C.",
         experience: "11 years of experience",
         image: dev1,
-        technologies: ["Python", "Node.js", "PostgreSQL"],
+        technologies: ["PyTorch", "TensorFlow", "Python"],
         company: bbva,
-        certifications: [
-          "AWS Certified Solutions Architect – Professional",
-          "Microsoft Certified: Azure Developer Associate",
-        ],
+        certifications: ["Deep Learning Specialization", "AI Lead"],
       },
       {
-        role: "Sr. Backend Architect",
-        name: "Ricardo F.",
-        experience: "14 years of experience",
+        role: "Data Scientist",
+        name: "Anna T.",
+        experience: "7 years of experience",
         image: dev2,
+        technologies: ["Pandas", "Scikit-Learn", "SQL"],
         company: johnson,
-        technologies: ["Kubernetes", "Terraform", "AWS"],
-        certifications: [
-          "AWS Certified Solutions Architect – Professional",
-          "Google Professional Cloud Architect",
-        ],
+        certifications: ["Data Science Professional", "Statistics Expert"],
       },
       {
-        role: "Sr. Database Engineer",
-        name: "Andrés M.",
-        experience: "9 years of experience",
+        role: "MLOps Engineer",
+        name: "Robert B.",
+        experience: "6 years of experience",
         image: dev3,
+        technologies: ["Kubernetes", "Docker", "GCP"],
         company: adobe,
-        technologies: ["PostgreSQL", "MongoDB", "Redis"],
-        certifications: [
-          "MongoDB Associate DBA",
-          "Oracle Database Administration",
-        ],
+        certifications: ["MLOps Certified", "Cloud Architect"],
       },
-
       {
-        role: "Sr. API Engineer",
-        name: "Sophia K.",
-        experience: "10 years of experience",
+        role: "NLP Specialist",
+        name: "Lisa W.",
+        experience: "8 years of experience",
         image: dev4,
+        technologies: ["HuggingFace", "Spacy", "Transformers"],
         company: siriusxm,
-        technologies: ["REST API", "GraphQL", "Node.js"],
-        certifications: [
-          "Postman API Fundamentals",
-          "OpenAPI Specification Professional",
-        ],
+        certifications: ["NLP Professional", "Linguistics Tech"],
       },
       {
-        role: "Sr. DevOps Engineer",
-        name: "Daniel P.",
+        role: "AI Solutions Architect",
+        name: "Thomas N.",
         experience: "12 years of experience",
         image: dev5,
+        technologies: ["AWS SageMaker", "Azure AI", "Python"],
         company: motorolla,
-        technologies: ["Docker", "Kubernetes", "CI/CD"],
-        certifications: [
-          "Certified Kubernetes Administrator (CKA)",
-          "AWS DevOps Engineer – Professional",
-        ],
+        certifications: ["Enterprise Architecture", "AI Ethics"],
+
       },
     ],
   },

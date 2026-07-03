@@ -9,7 +9,7 @@ export const Paths = {
   shopifyDevelopment: "shopify-development",
   erpDevelopment: "erp-development",
   webDevelopment: "web-development",
-  appDevelopment: "app-development",
+  mobileAppDevelopment: "mobile-app-development",
   uiUxDesign: "ui-ux-design",
   cloudDevOps: "cloud-devops",
 

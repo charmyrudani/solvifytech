@@ -21,7 +21,7 @@ export const techStackData: TechStackCard[] = [
   },
   {
     id: "app-development",
-    title: "App Development",
+    title: "Mobile App Development",
     description:
       "Develop intuitive Android, iOS, and cross-platform mobile applications.",
     iconType: "mobile",

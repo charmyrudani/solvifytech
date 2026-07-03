@@ -118,7 +118,7 @@ const Navbar: React.FC = () => {
                         <Link to={`${Paths.services}/${Paths.shopifyDevelopment}`} className="grid-link">Shopify Development</Link>
                         <Link to={`${Paths.services}/${Paths.erpDevelopment}`} className="grid-link">ERP Development</Link>
                         <Link to={`${Paths.services}/${Paths.webDevelopment}`} className="grid-link">Web Development</Link>
-                        <Link to={`${Paths.services}/${Paths.appDevelopment}`} className="grid-link">App Development</Link>
+                        <Link to={`${Paths.services}/${Paths.mobileAppDevelopment}`} className="grid-link">Mobile App Development</Link>
                         <Link to={`${Paths.services}/${Paths.uiUxDesign}`} className="grid-link">UI/UX Design</Link>
                         <Link to={`${Paths.services}/${Paths.cloudDevOps}`} className="grid-link">Cloud & DevOps</Link>
                       </div>
