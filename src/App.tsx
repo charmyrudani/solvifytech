@@ -3,8 +3,8 @@ import Layout from './components/layout/layout';
 import Home from './pages/home/home.tsx';
 import './App.css';
 import { Paths } from './constants/route-paths.constants';
-// import Services from './components/services1/services.tsx';
 import ServicePage from './pages/service-page/service-page.tsx';
+import TechnologyPage from './pages/technology-page/technology-page.tsx';
 
 function App() {
   return (
@@ -13,10 +13,11 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path={`${Paths.services}/:serviceId`} element={<ServicePage />} />
+          <Route path={`${Paths.technologies}/:technologyId`} element={<TechnologyPage />} />
         </Route>
       </Routes>
     </Router>
   );
 }
 
-export default App;
+export default App; 

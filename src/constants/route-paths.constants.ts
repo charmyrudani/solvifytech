@@ -1,7 +1,8 @@
 export const Paths = {
 
-  home: "",
+  home: "home",
   services: "services",
+  technologies: "technologies",
 
   // Top Services
   aiDevelopment: "ai-development",
@@ -36,5 +37,7 @@ export const Paths = {
   socialMediaMarketing: "social-media-marketing",
   emailMarketing: "email-marketing",
   leadGeneration: "lead-generation",
+
+  nodejs: "nodejs"
 
 } as const;

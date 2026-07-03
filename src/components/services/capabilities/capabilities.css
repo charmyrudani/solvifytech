@@ -88,6 +88,13 @@
   position: relative;
   /* height: 100%; */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .capability-details {
+    transform: translateY(var(--desktop-offset, 0px));
+  }
 }
 
 .capability-description {

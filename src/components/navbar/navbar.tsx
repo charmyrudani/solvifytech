@@ -203,30 +203,30 @@ const Navbar: React.FC = () => {
                     <div className="megamenu-middle-panel w-full-grid">
                       <span className="megamenu-section-header">Top Technologies</span>
                       <div className="megamenu-links-grid grid-cols-3">
-                        <Link to="/technologies" className="grid-link">.NET</Link>
-                        <Link to="/technologies" className="grid-link">AI</Link>
-                        <Link to="/technologies" className="grid-link">Angular</Link>
-                        <Link to="/technologies" className="grid-link">AWS</Link>
-                        <Link to="/technologies" className="grid-link">C#</Link>
-                        <Link to="/technologies" className="grid-link">C++</Link>
-                        <Link to="/technologies" className="grid-link">Django</Link>
-                        <Link to="/technologies" className="grid-link">Golang</Link>
-                        <Link to="/technologies" className="grid-link">Google Cloud</Link>
-                        <Link to="/technologies" className="grid-link">Java</Link>
-                        <Link to="/technologies" className="grid-link">JavaScript</Link>
-                        <Link to="/technologies" className="grid-link">Kotlin</Link>
-                        <Link to="/technologies" className="grid-link">Machine Learning</Link>
-                        <Link to="/technologies" className="grid-link">Microsoft Azure</Link>
-                        <Link to="/technologies" className="grid-link">Node.js</Link>
-                        <Link to="/technologies" className="grid-link">PHP</Link>
-                        <Link to="/technologies" className="grid-link">Power BI</Link>
-                        <Link to="/technologies" className="grid-link">Python</Link>
-                        <Link to="/technologies" className="grid-link">React</Link>
-                        <Link to="/technologies" className="grid-link">Ruby</Link>
-                        <Link to="/technologies" className="grid-link">Salesforce</Link>
-                        <Link to="/technologies" className="grid-link">TypeScript</Link>
-                        <Link to="/technologies" className="grid-link">Vue.js</Link>
-                        <Link to="/technologies" className="grid-link">Xamarin</Link>
+                        <Link to={`${Paths.technologies}/${Paths.nodejs}`} className="grid-link">Node.js</Link>
+                        {/* <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">.NET</Link>
+                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">AI</Link>
+                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Angular</Link>
+                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">AWS</Link>
+                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">C#</Link>
+                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">C++</Link>
+                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Django</Link>
+                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Golang</Link>
+                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Google Cloud</Link>
+                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Java</Link>
+                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">JavaScript</Link>
+                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Kotlin</Link>
+                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Machine Learning</Link>
+                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Microsoft Azure</Link>
+                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">PHP</Link>
+                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Power BI</Link>
+                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Python</Link>
+                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">React</Link>
+                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Ruby</Link>
+                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Salesforce</Link>
+                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">TypeScript</Link>
+                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Vue.js</Link>
+                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Xamarin</Link> */}
                       </div>
                       <Link to="/technologies" className="view-all-link">
                         <span>All Technologies</span>

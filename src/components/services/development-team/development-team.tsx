@@ -1,6 +1,7 @@
 import "./development-team.css";
 
-export default function DevelopmentTeam({ data }: any) {
+export default function DevelopmentTeam({ data, serviceName }: any) {
+  
   if (!data) return null;
 
   return (
@@ -59,7 +60,7 @@ export default function DevelopmentTeam({ data }: any) {
                 <img key={idx} src={eng.image} alt={eng.name} className="dt-cta-avatar" />
               ))}
             </div>
-            <h3 className="dt-cta-text">Onboard a backend development team in weeks, not months.</h3>
+            <h3 className="dt-cta-text">Onboard a {serviceName} team in weeks, not months.</h3>
             <button className="dt-cta-btn">Talk to an expert</button>
           </div>
         </div>
