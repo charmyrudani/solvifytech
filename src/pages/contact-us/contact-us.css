@@ -1,0 +1,395 @@
+.contact-page {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #333;
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Contact Main Layout */
+.contact-main {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  /* max-width: 1200px; */
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .contact-container {
+    flex-direction: row;
+  }
+}
+
+.contact-left {
+  padding: 40px;
+  background-color: #ffffff;
+  flex: 1;
+  border-right: 1px solid #eee;
+}
+
+.contact-logo {
+  margin-bottom: 30px;
+}
+.contact-logo img {
+  height: 60px;
+}
+
+.contact-divider {
+  height: 1px;
+  background-color: #eee;
+  margin-bottom: 30px;
+}
+
+.contact-inquiries {
+  margin-bottom: 40px;
+}
+
+.contact-inquiries h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.career-heading {
+  margin-top: 32px !important;
+}
+
+.inquiry-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 16px;
+  transition: opacity 0.2s;
+}
+
+.inquiry-item:hover {
+  opacity: 0.7;
+}
+
+.inquiry-item svg {
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+}
+
+.inquiry-item p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.btn-light {
+  background-color: transparent;
+  border: 1px solid #333;
+  color: #333;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-light:hover {
+  background-color: #f5f5f5;
+}
+
+.btn-dark {
+  background-color: #222;
+  border: 1px solid #222;
+  color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-dark:hover {
+  background-color: #000;
+}
+
+.contact-right {
+  padding: 40px;
+  background-color: #0d0d0d;
+  color: #fff;
+  flex: 1.5;
+}
+
+.contact-heading {
+  margin-bottom: 40px;
+}
+
+.contact-heading h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.contact-heading p {
+  font-size: 16px;
+  color: #ccc;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.input-wrapper, .textarea-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label, .textarea-wrapper label {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #eee;
+}
+
+.required {
+  color: #ff4d4d;
+  margin-left: 4px;
+}
+
+.input-wrapper input, .input-wrapper select, .textarea-wrapper textarea {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 14px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+.input-wrapper input:focus, .input-wrapper select:focus, .textarea-wrapper textarea:focus {
+  outline: none;
+  border-color: #666;
+}
+
+.phone-input {
+  display: flex;
+  gap: 8px;
+}
+.phone-input select {
+  width: 90px;
+}
+.phone-input input {
+  flex: 1;
+}
+
+.textarea-wrapper textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.sms-agreement label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 12px;
+  color: #aaa;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.sms-agreement input[type="checkbox"] {
+  margin-top: 4px;
+}
+.sms-agreement a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.submit-button {
+  background-color: #fff;
+  color: #000;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  width: fit-content;
+  min-width: 160px;
+}
+.submit-button:hover {
+  opacity: 0.9;
+}
+
+/* Next Steps Section */
+.next-steps-container {
+  margin-bottom: 80px;
+  padding: 0 20px;
+}
+
+.next-steps-container h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .steps-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.step-card {
+  background-color: #f9f9f9;
+  padding: 30px 24px;
+  border-radius: 16px;
+  transition: transform 0.3s;
+}
+.step-card:hover {
+  transform: translateY(-5px);
+}
+
+.step-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+.step-card p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* FAQ Section */
+.faq-container {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* gap: 40px; */
+  padding: 0 20px;
+}
+
+@media (min-width: 992px) {
+  .faq-container {
+    flex-direction: row;
+  }
+}
+
+.faq-left {
+  flex: 1;
+}
+
+.faq-left h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.faq-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  cursor: pointer;
+}
+
+.faq-question p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.faq-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.faq-icon svg {
+  width: 20px;
+  height: 20px;
+  color: #000;
+}
+
+.faq-answer {
+  padding: 0 24px 24px;
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.contact-intro-text {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -3,6 +3,8 @@ export const Paths = {
   home: "home",
   services: "services",
   technologies: "technologies",
+  contactUs: "contact-us",
+  blog: "blog",
 
   // Top Services
   aiDevelopment: "ai-development",

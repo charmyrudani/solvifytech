@@ -348,7 +348,7 @@ const Navbar: React.FC = () => {
                         <Link to="/about" className="grid-link">Our Leadership Team</Link>
                         <Link to="/about" className="grid-link">Our Tech Talent</Link>
                         <Link to="/about" className="grid-link">Press Releases</Link>
-                        <Link to="/about" className="grid-link">Contact Us</Link>
+                        <Link to={Paths.contactUs} className="grid-link">Contact Us</Link>
                         <Link to="/about" className="grid-link">FAQs</Link>
                       </div>
                       <Link to="/about" className="view-all-link no-mt">
@@ -391,7 +391,7 @@ const Navbar: React.FC = () => {
               </li>
 
               <li className="navbar-menu-item">
-                <NavLink to="/blog" className={({ isActive }) => `navbar-link-btn flat-link ${isActive ? 'active' : ''}`}>
+                <NavLink to={Paths.blog} className={({ isActive }) => `navbar-link-btn flat-link ${isActive ? 'active' : ''}`}>
                   Blog
                 </NavLink>
               </li>
@@ -525,7 +525,7 @@ const Navbar: React.FC = () => {
                   <Link to="/about" className="mobile-sublink">Our Leadership Team</Link>
                   <Link to="/about" className="mobile-sublink">Our Tech Talent</Link>
                   <Link to="/about" className="mobile-sublink">Press Releases</Link>
-                  <Link to="/about" className="mobile-sublink">Contact Us</Link>
+                  <Link to={Paths.contactUs} className="mobile-sublink">Contact Us</Link>
                   <Link to="/about" className="mobile-sublink">Working at BairesDev</Link>
                   <Link to="/about" className="mobile-sublink">Job Opportunities</Link>
                 </div>
@@ -537,7 +537,7 @@ const Navbar: React.FC = () => {
               <Link to="/our-work" className="mobile-flat-link">Our Work</Link>
             </li>
             <li className="mobile-menu-item">
-              <Link to="/blog" className="mobile-flat-link">Blog</Link>
+              <Link to={Paths.blog} className="mobile-flat-link">Blog</Link>
             </li>
           </ul>
 
