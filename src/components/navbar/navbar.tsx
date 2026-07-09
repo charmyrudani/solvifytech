@@ -203,30 +203,23 @@ const Navbar: React.FC = () => {
                     <div className="megamenu-middle-panel w-full-grid">
                       <span className="megamenu-section-header">Top Technologies</span>
                       <div className="megamenu-links-grid grid-cols-3">
-                        <Link to={`${Paths.technologies}/${Paths.nodejs}`} className="grid-link">Node.js</Link>
-                        {/* <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">.NET</Link>
-                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">AI</Link>
-                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Angular</Link>
-                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">AWS</Link>
-                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">C#</Link>
-                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">C++</Link>
-                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Django</Link>
-                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Golang</Link>
-                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Google Cloud</Link>
-                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Java</Link>
-                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">JavaScript</Link>
-                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Kotlin</Link>
-                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Machine Learning</Link>
-                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Microsoft Azure</Link>
-                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">PHP</Link>
-                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Power BI</Link>
-                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Python</Link>
-                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">React</Link>
-                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Ruby</Link>
-                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Salesforce</Link>
-                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">TypeScript</Link>
-                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Vue.js</Link>
-                        <Link to={`${Paths.technologies}/${Paths.}`} className="grid-link">Xamarin</Link> */}
+                        <Link to={`${Paths.technologies}/${Paths.aiAutomation}`} className="grid-link">AI Automation</Link>
+                        <Link to={`${Paths.technologies}/${Paths.ai}`} className="grid-link">AI</Link>
+                        <Link to={`${Paths.technologies}/${Paths.reactjs}`} className="grid-link">React JS</Link>
+                        <Link to={`${Paths.technologies}/${Paths.nextjs}`} className="grid-link">Next JS</Link>
+                        <Link to={`${Paths.technologies}/${Paths.typescript}`} className="grid-link">TypeScript</Link>
+                        <Link to={`${Paths.technologies}/${Paths.nodejs}`} className="grid-link">Node JS</Link>
+                        <Link to={`${Paths.technologies}/${Paths.postgresql}`} className="grid-link">Postgre SQL</Link>
+                        <Link to={`${Paths.technologies}/${Paths.aws}`} className="grid-link">AWS</Link>
+                        <Link to={`${Paths.technologies}/${Paths.docker}`} className="grid-link">Docker</Link>
+                        <Link to={`${Paths.technologies}/${Paths.shopify}`} className="grid-link">Shopify</Link>
+                        <Link to={`${Paths.technologies}/${Paths.reactNative}`} className="grid-link">React Native</Link>
+                        <Link to={`${Paths.technologies}/${Paths.python}`} className="grid-link">Python</Link>
+                        <Link to={`${Paths.technologies}/${Paths.mongodb}`} className="grid-link">Mongo DB</Link>
+                        <Link to={`${Paths.technologies}/${Paths.wordpress}`} className="grid-link">Wordpress</Link>
+                        <Link to={`${Paths.technologies}/${Paths.graphql}`} className="grid-link">Graphql</Link>
+                        <Link to={`${Paths.technologies}/${Paths.redis}`} className="grid-link">Redis</Link>
+                        <Link to={`${Paths.technologies}/${Paths.strapi}`} className="grid-link">Strapi</Link>
                       </div>
                       <Link to="/technologies" className="view-all-link">
                         <span>All Technologies</span>
@@ -385,7 +378,7 @@ const Navbar: React.FC = () => {
 
               {/* OTHER FLAT LINKS */}
               <li className="navbar-menu-item">
-                <NavLink to="/our-work" className={({ isActive }) => `navbar-link-btn flat-link ${isActive ? 'active' : ''}`}>
+                <NavLink to={Paths.ourWork} className={({ isActive }) => `navbar-link-btn flat-link ${isActive ? 'active' : ''}`}>
                   Our Work
                 </NavLink>
               </li>
@@ -534,7 +527,7 @@ const Navbar: React.FC = () => {
 
             {/* FLAT LINKS */}
             <li className="mobile-menu-item">
-              <Link to="/our-work" className="mobile-flat-link">Our Work</Link>
+              <Link to={Paths.ourWork} className="mobile-flat-link">Our Work</Link>
             </li>
             <li className="mobile-menu-item">
               <Link to={Paths.blog} className="mobile-flat-link">Blog</Link>

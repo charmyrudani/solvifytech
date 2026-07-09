@@ -8,6 +8,8 @@ import TechnologyPage from './pages/technology-page/technology-page.tsx';
 import ContactUs from './pages/contact-us/contact-us.tsx';
 import Blog from './pages/blog/blog.tsx';
 import BlogDetail from './pages/blog/blog-detail/blog-detail.tsx';
+import OurWork from './pages/our-work/our-work.tsx';
+import CaseStudyPage from './components/our-work/case-study.tsx';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path={`${Paths.contactUs}`} element={<ContactUs />} />
           <Route path={`${Paths.blog}`} element={<Blog />} />
           <Route path={`${Paths.blog}/:blogId`} element={<BlogDetail />} />
+          <Route path={`${Paths.ourWork}`} element={<OurWork />} />
+          <Route path={`${Paths.ourWork}/:casestudyId`} element={<CaseStudyPage />} />
         </Route>
       </Routes>
     </Router>

@@ -5,6 +5,7 @@ export const Paths = {
   technologies: "technologies",
   contactUs: "contact-us",
   blog: "blog",
+  ourWork: "our-work",
 
   // Top Services
   aiDevelopment: "ai-development",
@@ -40,6 +41,34 @@ export const Paths = {
   emailMarketing: "email-marketing",
   leadGeneration: "lead-generation",
 
-  nodejs: "nodejs"
+
+  // Technologies
+  aiAutomation: "ai-automation",
+  ai: "ai",
+  reactjs: "reactjs",
+  nextjs: "nextjs",
+  typescript: "typescript",
+  nodejs: "nodejs",
+  postgresql: "postgresql",
+  aws: "aws",
+  docker: "docker",
+  shopify: "shopify",
+  reactNative: "react-native",
+  python: "python",
+  mongodb: "mongodb",
+  wordpress: "wordpress",
+  graphql: "graphql",
+  redis: "redis",
+  strapi: "strapi",
+
+  
+  // Case-Studies
+  tap1ce: "tap1ce",
+  collectiveCreativeLabs: "collective-creative-labs",
+  doccure: "doccure",
+  hireGlobalTalent: "hire-global-talent",
+  marriott: "marriott",
+  tataPlayFiber: "tata-play-fiber",
+  winesOfNZ: "wines-of-nz",
 
 } as const;

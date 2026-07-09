@@ -6,7 +6,7 @@ import IndustriesSolutions from "../../components/services/industries-solutions/
 import AIExperts from "../../components/services/ai-experts/ai-experts";
 import Capabilities from "../../components/services/capabilities/capabilities";
 import ProjectBanner from "../../components/services/project-banner/project-banner";
-import { getTechnology } from "../../data/technology/service-helper";
+import { getTechnology } from "../../data/technology/technology-helper";
 
 export default function TechnologyPage() {
     const { technologyId } = useParams();
