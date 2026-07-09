@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Paths } from '../../../constants/route-paths.constants';
 import './blog-detail.css';
+import { GoHome } from 'react-icons/go';
 
 const relatedBlogs = [
     {
@@ -216,19 +217,30 @@ export default function BlogDetail() {
         <div className="bd-page-wrapper">
             <div className="bd-container">
                 <div className="bd-main-content">
-                    <div className="bd-breadcrumb">
-                        <Link to={Paths.home} style={{color: 'inherit', textDecoration: 'none'}}>Home</Link> 
-                         <Link to={`/${Paths.blog}`} style={{color: 'inherit', textDecoration: 'none'}}>Blog</Link> / {post.title.substring(0, 40)}...
-                    </div>
-                    
+                    <nav className="bd-breadcrumb-nav" aria-label="breadcrumb">
+                        <ol className="bd-breadcrumb-list">
+                            <li className="bd-breadcrumb-item">
+                                <Link to="/" className="bd-breadcrumb-link" aria-label="Home">
+                                    <GoHome size={20} />
+                                </Link>
+                            </li>
+                            <li className="bd-breadcrumb-item">
+                                <Link to={`/${Paths.blog}`} className="bd-breadcrumb-link">Blog</Link>
+                            </li>
+                            <li className="bd-breadcrumb-item bd-breadcrumb-current">
+                                {post.title.length > 40 ? post.title.substring(0, 40) + '...' : post.title}
+                            </li>
+                        </ol>
+                    </nav>
+
                     <h1 className="bd-title">
                         {post.title}
                     </h1>
-                    
+
                     <p className="bd-excerpt">
                         {post.excerpt}
                     </p>
-                    
+
                     <div className="bd-meta-bar">
                         <div className="bd-meta-left">
                             <span className="bd-date">{post.date}</span>
@@ -236,23 +248,23 @@ export default function BlogDetail() {
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                                 {post.views} views
                             </span>
-                            <button className="bd-like-btn">
+                            {/* <button className="bd-like-btn">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
                                 0
-                            </button>
+                            </button> */}
                         </div>
-                        <button className="bd-share-btn">
+                        {/* <button className="bd-share-btn">
                             Share this article
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M13 3h7v7M10 14L21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
-                        </button>
+                        </button> */}
                     </div>
-                    
+
                     <div className="bd-featured-image">
                         <img src={post.image} alt="Featured" />
                     </div>
-                    
+
                     <div className="bd-article-body" dangerouslySetInnerHTML={{ __html: post.content }}></div>
-                    
+
                     <div className="bd-related-blogs">
                         <h2>Related Blog</h2>
                         <div className="bd-related-grid">
@@ -270,7 +282,7 @@ export default function BlogDetail() {
                         </div>
                     </div>
                 </div>
-                
+
                 <aside className="bd-sidebar">
                     <h3 className="bd-sidebar-title">Popular Services</h3>
                     <div className="bd-services-list">

@@ -10,6 +10,51 @@
   background: #ffffff;
 }
 
+/* ==========================
+   Team Section Heading
+   ========================== */
+.team-heading {
+  text-align: center;
+  padding: 60px 24px 0;
+}
+
+.team-eyebrow {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ff5c35;
+  margin-bottom: 12px;
+}
+
+.team-title {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.team-title-accent {
+  color: #ff5c35;
+}
+
+.team-title .dot {
+  color: #ff5c35;
+}
+
+.team-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: #64748b;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
 .team {
   width: 100%;
   display: flex;

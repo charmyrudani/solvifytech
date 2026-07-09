@@ -150,7 +150,7 @@ export default function ContactUs() {
       </div>
 
       {/* FAQ Section */}
-      <div className="faq-container">
+      <div id="faq" className="faq-container">
         <div className="faq-left">
           <h2>Frequently Asked Questions</h2>
         </div>

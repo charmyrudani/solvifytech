@@ -1,8 +1,9 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { CASESTUDY } from "../../data/case-study/index";
 import "./case-study.css";
 import { Paths } from "../../constants/route-paths.constants";
 import outcomeImg from '/images/our-work/outcome.png';
+import { GoHome } from 'react-icons/go';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type CaseStudyData = any;
@@ -52,6 +53,13 @@ function CaseStudy({ data }: { data: CaseStudyData }) {
     technologies,
     outcome,
     keyFeatures,
+    heroNumbers,
+    workflow,
+    platformEcosystem,
+    keyTakeaway,
+    metrics,
+    quote,
+    ongoingPartnership,
   } = data;
 
   // Challenge: pick whichever list field exists
@@ -96,20 +104,46 @@ function CaseStudy({ data }: { data: CaseStudyData }) {
       <section className="cs-hero">
         <div className="cs-hero-overlay" />
         <div className="cs-hero-content">
-          <p className="cs-breadcrumb">
-            Home &nbsp;›&nbsp; Our Clients &nbsp;›&nbsp; {title}
-          </p>
+          <nav className="bd-breadcrumb-nav cs-custom-breadcrumb" aria-label="breadcrumb">
+            <ol className="bd-breadcrumb-list">
+              <li className="bd-breadcrumb-item">
+                <Link to="/" className="bd-breadcrumb-link" aria-label="Home">
+                  <GoHome size={20} />
+                </Link>
+              </li>
+              <li className="bd-breadcrumb-item">
+                <Link to={`/${Paths.ourWork}`} className="bd-breadcrumb-link">Our Work</Link>
+              </li>
+              <li className="bd-breadcrumb-item bd-breadcrumb-current">
+                {title}
+              </li>
+            </ol>
+          </nav>
           <div className="cs-hero-grid">
             <div>
               <p className="cs-eyebrow">{title} Case Study · {industry}</p>
               <h1>{subtitle}</h1>
             </div>
-            <div className="cs-hero-form-card">
+            {/* <div className="cs-hero-form-card">
               <p>Get this case study in PDF to your inbox.</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
+
+      {/* HERO NUMBERS — tap1ce */}
+      {heroNumbers && heroNumbers.length > 0 && (
+        <section className="cs-hero-numbers">
+          <div className="cs-hero-numbers-inner">
+            {heroNumbers.map((stat: { value: string; label: string }) => (
+              <div className="cs-hero-stat" key={stat.label}>
+                <span className="cs-hero-stat-value">{stat.value}</span>
+                <span className="cs-hero-stat-label">{stat.label}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* SUMMARY */}
       <section className="cs-summary">
@@ -218,6 +252,69 @@ function CaseStudy({ data }: { data: CaseStudyData }) {
         </div>
       </section>
 
+      {/* WORKFLOW — wines-of-nz */}
+      {workflow && (
+        <section className="cs-workflow">
+          <div className="cs-workflow-inner">
+            <h2 className="cs-workflow-title">The Workflow<span className="dot">.</span></h2>
+            <div className="cs-workflow-grid">
+              {workflow.productManagement && (
+                <div className="cs-workflow-lane">
+                  <h3 className="cs-workflow-lane-title">Product Management</h3>
+                  <div className="cs-workflow-steps">
+                    {workflow.productManagement.map((step: string, i: number) => (
+                      <div className="cs-workflow-step" key={step}>
+                        <div className="cs-workflow-step-badge">{String(i + 1).padStart(2, "0")}</div>
+                        <span>{step}</span>
+                        {i < workflow.productManagement.length - 1 && <div className="cs-workflow-arrow">↓</div>}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+              {workflow.orderFlow && (
+                <div className="cs-workflow-lane">
+                  <h3 className="cs-workflow-lane-title">Order Flow</h3>
+                  <div className="cs-workflow-steps">
+                    {workflow.orderFlow.map((step: string, i: number) => (
+                      <div className="cs-workflow-step" key={step}>
+                        <div className="cs-workflow-step-badge">{String(i + 1).padStart(2, "0")}</div>
+                        <span>{step}</span>
+                        {i < workflow.orderFlow.length - 1 && <div className="cs-workflow-arrow">↓</div>}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* PLATFORM ECOSYSTEM — doccure */}
+      {platformEcosystem && (
+        <section className="cs-ecosystem">
+          <div className="cs-ecosystem-inner">
+            <h2 className="cs-ecosystem-title">The Platform Ecosystem<span className="dot">.</span></h2>
+            <div className="cs-ecosystem-grid">
+              {Object.values(platformEcosystem as Record<string, { title: string; features: readonly string[] }>).map((portal) => (
+                <div className="cs-ecosystem-card" key={portal.title}>
+                  <h3 className="cs-ecosystem-card-title">{portal.title}</h3>
+                  <ul className="cs-ecosystem-list">
+                    {portal.features.map((f: string) => (
+                      <li key={f}>
+                        <span className="cs-ecosystem-dot" />
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* TECHNOLOGIES */}
       <section className="cs-tech-band">
         <div className="cs-tech-orb cs-tech-orb-1" />
@@ -281,6 +378,26 @@ function CaseStudy({ data }: { data: CaseStudyData }) {
         </section>
       )}
 
+      {/* ONGOING PARTNERSHIP — CCL */}
+      {ongoingPartnership && (
+        <section className="cs-partnership">
+          <div className="cs-partnership-inner">
+            <div className="cs-partnership-content">
+              <h2 className="cs-partnership-title">Our Partnership Continues<span className="dot">.</span></h2>
+              <p className="cs-partnership-desc">{ongoingPartnership.description}</p>
+              <ul className="cs-partnership-list">
+                {ongoingPartnership.activities.map((activity: string) => (
+                  <li key={activity}>
+                    <span className="cs-partnership-check">✓</span>
+                    {activity}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* OUTCOME */}
       <section className="cs-outcome">
         <div className="cs-outcome-inner d-flex">
@@ -308,6 +425,43 @@ function CaseStudy({ data }: { data: CaseStudyData }) {
           </div>
         </div>
       </section>
+
+      {/* KEY TAKEAWAY — tata-play-fiber, wines-of-nz, doccure */}
+      {keyTakeaway && (
+        <section className="cs-takeaway">
+          <div className="cs-takeaway-inner">
+            <span className="cs-takeaway-eyebrow">Key Takeaway</span>
+            <blockquote className="cs-takeaway-quote">{keyTakeaway}</blockquote>
+          </div>
+        </section>
+      )}
+
+      {/* FEATURED METRICS — wines-of-nz */}
+      {metrics && metrics.length > 0 && (
+        <section className="cs-metrics">
+          <div className="cs-metrics-inner">
+            <h2 className="cs-metrics-title">Featured Metrics<span className="dot">.</span></h2>
+            <div className="cs-metrics-grid">
+              {metrics.map((m: { metric: string; result: string }) => (
+                <div className="cs-metric-card" key={m.metric}>
+                  <span className="cs-metric-result">{m.result}</span>
+                  <span className="cs-metric-label">{m.metric}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* FINAL QUOTE — wines-of-nz */}
+      {quote && (
+        <section className="cs-final-quote">
+          <div className="cs-final-quote-inner">
+            <span className="cs-final-quote-mark">&ldquo;</span>
+            <p className="cs-final-quote-text">{quote}</p>
+          </div>
+        </section>
+      )}
 
       {/* CTA */}
       <section className="cs-cta">

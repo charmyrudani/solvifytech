@@ -11,7 +11,6 @@ const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
 
-  // Close menus when route changes
   const [prevPathname, setPrevPathname] = useState(location.pathname);
   if (location.pathname !== prevPathname) {
     setPrevPathname(location.pathname);
@@ -20,7 +19,6 @@ const Navbar: React.FC = () => {
     setMobileActiveAccordion(null);
   }
 
-  // Track scroll position to change background transparency or shadow
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
@@ -57,7 +55,6 @@ const Navbar: React.FC = () => {
     <>
       <header className={`navbar-header ${isScrolled ? 'scrolled' : ''} ${activeDropdown ? 'menu-open' : ''}`}>
         <div className="navbar-container">
-          {/* Logo Section */}
           <div className="navbar-logo-area">
             <Link to="/" className="navbar-logo-link" aria-label="BairesDev home">
               <img
@@ -68,46 +65,42 @@ const Navbar: React.FC = () => {
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
           <nav className="desktop-navbar-nav" aria-label="BairesDev main navigation">
             <ul className="navbar-menu-list">
-              {/* SERVICES DROPDOWN */}
               <li
                 className="navbar-menu-item dropdown-trigger"
                 onMouseEnter={() => handleMouseEnter('services')}
                 onMouseLeave={handleMouseLeave}
               >
-                <Link to="/services" className={`navbar-link-btn ${activeDropdown === 'services' ? 'active' : ''}`}>
+                <Link to="#" className={`navbar-link-btn ${activeDropdown === 'services' ? 'active' : ''}`}>
                   Services
                   <svg className={`chevron-icon ${activeDropdown === 'services' ? 'rotate-180' : ''}`} viewBox="0 0 24 24" width="16" height="16">
                     <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
                   </svg>
                 </Link>
 
-                {/* SERVICES MEGAMENU */}
                 <div className={`megamenu-dropdown ${activeDropdown === 'services' ? 'visible' : ''}`}>
                   <div className="megamenu-inner-grid megamenu-services-grid">
-                    {/* Left Panel */}
                     <div className="megamenu-left-panel">
                       <h3 className="megamenu-title">Services</h3>
-                      <p className="megamenu-subtitle">
-                        Get software development services, built around your needs:
-                      </p>
-                      <div className="megamenu-quick-links">
-                        <Link to="/services" className="quick-link">Staff Augmentation</Link>
-                        <Link to="/services" className="quick-link">Dedicated Teams</Link>
-                        <Link to="/services" className="quick-link">Software Outsourcing</Link>
-                        <Link to="/services" className="quick-link">AI Transformation</Link>
-                      </div>
-                      <div className="megamenu-case-study">
-                        <img
-                          src="https://assets.bairesdev.com//image/upload/c_limit,w_120/fl_sanitize/v1/www/core/rolls_royce_default_6583f2d285.svg"
-                          alt="Rolls Royce"
-                          className="case-study-client-logo"
-                        />
-                        <p className="case-study-description">
-                          We built an app for real-time nuclear plant monitoring. <Link to="/our-work" className="case-study-link">Read case study.</Link>
-                        </p>
+                      <p className="megamenu-subtitle">Tailored engineering for every stage of growth.</p>
+                      <div className="mm-stats-grid">
+                        <div className="mm-stat-card">
+                          <span className="mm-stat-value">500<span className="mm-stat-plus">+ </span></span>
+                          <span className="mm-stat-label">Active Clients</span>
+                        </div>
+                        <div className="mm-stat-card">
+                          <span className="mm-stat-value">96<span className="mm-stat-unit">% </span></span>
+                          <span className="mm-stat-label">Retention Rate</span>
+                        </div>
+                        <div className="mm-stat-card">
+                          <span className="mm-stat-value">10<span className="mm-stat-unit">+ </span></span>
+                          <span className="mm-stat-label">Years Delivering</span>
+                        </div>
+                        <div className="mm-stat-card">
+                          <span className="mm-stat-value">1.2<span className="mm-stat-unit">K+ </span></span>
+                          <span className="mm-stat-label">Projects Shipped</span>
+                        </div>
                       </div>
                     </div>
 
@@ -161,45 +154,43 @@ const Navbar: React.FC = () => {
                 </div>
               </li>
 
-              {/* TECHNOLOGIES DROPDOWN */}
               <li
                 className="navbar-menu-item dropdown-trigger"
                 onMouseEnter={() => handleMouseEnter('technologies')}
                 onMouseLeave={handleMouseLeave}
               >
-                <Link to="/technologies" className={`navbar-link-btn ${activeDropdown === 'technologies' ? 'active' : ''}`}>
+                <Link to="#" className={`navbar-link-btn ${activeDropdown === 'technologies' ? 'active' : ''}`}>
                   Technologies
                   <svg className={`chevron-icon ${activeDropdown === 'technologies' ? 'rotate-180' : ''}`} viewBox="0 0 24 24" width="16" height="16">
                     <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
                   </svg>
                 </Link>
 
-                {/* TECHNOLOGIES MEGAMENU */}
                 <div className={`megamenu-dropdown ${activeDropdown === 'technologies' ? 'visible' : ''}`}>
                   <div className="megamenu-inner-grid">
-                    {/* Left Panel */}
                     <div className="megamenu-left-panel">
                       <h3 className="megamenu-title">Technologies</h3>
-                      <p className="megamenu-subtitle">
-                        Get experts in 100+ technologies. Cover any tech stack.
-                      </p>
-                      <div className="megamenu-quick-links">
-                        <Link to="/technologies" className="quick-link">Hire Software Developers</Link>
-                        <Link to="/technologies" className="quick-link">Top 1% Talent</Link>
-                      </div>
-                      <div className="megamenu-case-study">
-                        <img
-                          src="https://assets.bairesdev.com//image/upload/c_limit,w_120/fl_sanitize/v1/www/static/clientlogos/urban-outfitters_fjfyfq.svg"
-                          alt="Urban Outfitters"
-                          className="case-study-client-logo"
-                        />
-                        <p className="case-study-description">
-                          We optimized website performance, leading to 38% increase in net profits. <Link to="/our-work" className="case-study-link">Read case study.</Link>
-                        </p>
+                      <p className="megamenu-subtitle">Top-tier engineers across every modern stack.</p>
+                      <div className="mm-stats-grid">
+                        <div className="mm-stat-card">
+                          <span className="mm-stat-value">100<span className="mm-stat-unit">+ </span></span>
+                          <span className="mm-stat-label">Technologies</span>
+                        </div>
+                        <div className="mm-stat-card">
+                          <span className="mm-stat-value">Top<span className="mm-stat-unit"> 1% </span></span>
+                          <span className="mm-stat-label">Vetted Talent</span>
+                        </div>
+                        <div className="mm-stat-card">
+                          <span className="mm-stat-value">30<span className="mm-stat-unit">+ </span></span>
+                          <span className="mm-stat-label">Countries Served</span>
+                        </div>
+                        <div className="mm-stat-card">
+                          <span className="mm-stat-value">48<span className="mm-stat-unit">h </span></span>
+                          <span className="mm-stat-label">Avg. Onboarding</span>
+                        </div>
                       </div>
                     </div>
 
-                    {/* Middle/Right Tech Grid (Extended layout) */}
                     <div className="megamenu-middle-panel w-full-grid">
                       <span className="megamenu-section-header">Top Technologies</span>
                       <div className="megamenu-links-grid grid-cols-3">
@@ -221,19 +212,18 @@ const Navbar: React.FC = () => {
                         <Link to={`${Paths.technologies}/${Paths.redis}`} className="grid-link">Redis</Link>
                         <Link to={`${Paths.technologies}/${Paths.strapi}`} className="grid-link">Strapi</Link>
                       </div>
-                      <Link to="/technologies" className="view-all-link">
+                      {/* <Link to="/technologies" className="view-all-link">
                         <span>All Technologies</span>
                         <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
                           <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
                         </svg>
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                 </div>
               </li>
 
-              {/* INDUSTRIES DROPDOWN */}
-              <li
+              {/* <li
                 className="navbar-menu-item dropdown-trigger"
                 onMouseEnter={() => handleMouseEnter('industries')}
                 onMouseLeave={handleMouseLeave}
@@ -245,10 +235,8 @@ const Navbar: React.FC = () => {
                   </svg>
                 </Link>
 
-                {/* INDUSTRIES MEGAMENU */}
                 <div className={`megamenu-dropdown ${activeDropdown === 'industries' ? 'visible' : ''}`}>
                   <div className="megamenu-inner-grid">
-                    {/* Left Panel */}
                     <div className="megamenu-left-panel">
                       <h3 className="megamenu-title">Industries</h3>
                       <p className="megamenu-subtitle">
@@ -266,7 +254,6 @@ const Navbar: React.FC = () => {
                       </div>
                     </div>
 
-                    {/* Middle/Right Industry Grid */}
                     <div className="megamenu-middle-panel w-full-grid">
                       <span className="megamenu-section-header">All Industries</span>
                       <div className="megamenu-links-grid grid-cols-3">
@@ -298,71 +285,73 @@ const Navbar: React.FC = () => {
                     </div>
                   </div>
                 </div>
-              </li>
+              </li> */}
 
-              {/* ABOUT DROPDOWN */}
               <li
                 className="navbar-menu-item dropdown-trigger"
                 onMouseEnter={() => handleMouseEnter('about')}
                 onMouseLeave={handleMouseLeave}
               >
-                <Link to="/about" className={`navbar-link-btn ${activeDropdown === 'about' ? 'active' : ''}`}>
+                <Link to="#" className={`navbar-link-btn ${activeDropdown === 'about' ? 'active' : ''}`}>
                   About
                   <svg className={`chevron-icon ${activeDropdown === 'about' ? 'rotate-180' : ''}`} viewBox="0 0 24 24" width="16" height="16">
                     <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
                   </svg>
                 </Link>
 
-                {/* ABOUT MEGAMENU */}
                 <div className={`megamenu-dropdown ${activeDropdown === 'about' ? 'visible' : ''}`}>
                   <div className="megamenu-inner-grid">
-                    {/* Left Panel */}
                     <div className="megamenu-left-panel">
                       <h3 className="megamenu-title">About</h3>
-                      <p className="megamenu-subtitle">
-                        Since 2009, we've built software for companies of all types, from startups to Fortune 500 giants.
-                      </p>
-                      <div className="megamenu-case-study about-ceo">
-                        <img
-                          src="https://assets.bairesdev.com//image/upload/c_limit,w_100/dpr_auto/f_auto/q_auto/v1/www/staging/nacho_816ff45aee"
-                          alt="CEO Nacho De Marco"
-                          className="case-study-client-logo ceo-pic"
-                        />
-                        <p className="case-study-description">
-                          Our CEO, speaking at the World Economic Forum at Davos 2025. <a href="https://press.bairesdev.com/bairesdev-joins-world-economic-forum/" target="_blank" rel="noopener noreferrer" className="case-study-link">Read more</a>
-                        </p>
+                      <p className="megamenu-subtitle">A decade of engineering excellence, worldwide.</p>
+                      <div className="mm-stats-grid">
+                        <div className="mm-stat-card">
+                          <span className="mm-stat-value">2015</span>
+                          <span className="mm-stat-label">Founded</span>
+                        </div>
+                        <div className="mm-stat-card">
+                          <span className="mm-stat-value">30<span className="mm-stat-unit">+ </span></span>
+                          <span className="mm-stat-label">Countries</span>
+                        </div>
+                        <div className="mm-stat-card">
+                          <span className="mm-stat-value">200<span className="mm-stat-unit">+ </span></span>
+                          <span className="mm-stat-label">Engineers</span>
+                        </div>
+                        <div className="mm-stat-card">
+                          <span className="mm-stat-value">F500</span>
+                          <span className="mm-stat-label">Clients Served</span>
+                        </div>
                       </div>
                     </div>
 
-                    {/* Middle Column (Inside BairesDev) */}
                     <div className="megamenu-column">
                       <span className="megamenu-section-header">Inside BairesDev</span>
                       <div className="megamenu-links-list">
-                        <Link to="/about" className="grid-link">Our Leadership Team</Link>
+                        {/* <Link to="/about" className="grid-link">Our Leadership Team</Link>
                         <Link to="/about" className="grid-link">Our Tech Talent</Link>
-                        <Link to="/about" className="grid-link">Press Releases</Link>
+                        <Link to="/about" className="grid-link">Press Releases</Link> */}
                         <Link to={Paths.contactUs} className="grid-link">Contact Us</Link>
-                        <Link to="/about" className="grid-link">FAQs</Link>
+                        <Link to={`/${Paths.contactUs}#faq`} className="grid-link">FAQs</Link>
                       </div>
-                      <Link to="/about" className="view-all-link no-mt">
+                      {/* <Link to="/about" className="view-all-link no-mt">
                         <span>Our Story</span>
                         <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
                           <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
                         </svg>
-                      </Link>
+                      </Link> */}
                     </div>
 
                     {/* Recognitions Column */}
-                    <div className="megamenu-column">
+                    {/* <div className="megamenu-column">
                       <span className="megamenu-section-header">Recognitions</span>
                       <div className="megamenu-links-list">
                         <Link to="/about" className="grid-link">Awards</Link>
                         <Link to="/about" className="grid-link">Certifications</Link>
                       </div>
-                    </div>
+                    </div> */}
 
                     {/* Careers Column */}
-                    <div className="megamenu-column">
+                    {/* <div className="megamenu-column">
                       <span className="megamenu-section-header">Careers</span>
                       <div className="megamenu-links-list">
                         <Link to="/about" className="grid-link">Working at BairesDev</Link>
@@ -371,7 +360,7 @@ const Navbar: React.FC = () => {
                         <Link to="/about" className="grid-link">Our Circles Program</Link>
                         <Link to="/about" className="grid-link">Company Culture</Link>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </li>
@@ -393,7 +382,7 @@ const Navbar: React.FC = () => {
 
           {/* Right Header Actions */}
           <div className="navbar-actions-area">
-            <Link to="/schedule-call" className="btn-schedule-call">
+            <Link to={`/${Paths.contactUs}`} className="btn-schedule-call">
               Schedule a Call
             </Link>
 
@@ -479,7 +468,7 @@ const Navbar: React.FC = () => {
             </li>
 
             {/* INDUSTRIES ACCORDION */}
-            <li className="mobile-menu-item">
+            {/* <li className="mobile-menu-item">
               <button
                 type="button"
                 className={`mobile-accordion-toggle ${mobileActiveAccordion === 'industries' ? 'active' : ''}`}
@@ -499,7 +488,7 @@ const Navbar: React.FC = () => {
                   <Link to="/industries" className="mobile-sublink">Startups</Link>
                 </div>
               </div>
-            </li>
+            </li> */}
 
             {/* ABOUT ACCORDION */}
             <li className="mobile-menu-item">
@@ -535,7 +524,7 @@ const Navbar: React.FC = () => {
           </ul>
 
           <div className="mobile-menu-footer">
-            <Link to="/schedule-call" className="btn-mobile-schedule">
+            <Link to={`/${Paths.contactUs}`} className="btn-mobile-schedule">
               Schedule a Call
             </Link>
           </div>

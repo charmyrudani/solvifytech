@@ -1,5 +1,6 @@
 import { FiArrowRight } from "react-icons/fi";
 import { GoHome } from "react-icons/go";
+import { Link } from "react-router-dom";
 import tap1ce from '/images/our-work/tap1ce.webp'
 import hgt from '/images/our-work/hgt.webp'
 import ccl from '/images/our-work/ccl.webp'
@@ -9,7 +10,6 @@ import tataPlayFiber from '/images/our-work/tata-play-fiber.webp'
 import marriott from '/images/our-work/marriott.webp'
 import './our-work.css';
 import { Paths } from "../../constants/route-paths.constants";
-// import { winesOfNZ } from "../../data/case-study/winesOfNZ";
 
 export default function OurWork() {
   const col1 = [
@@ -70,15 +70,17 @@ export default function OurWork() {
 
   return (
     <div className="our-work-container">
-      <div className="breadcrumbs">
-        <GoHome size={20} />
-        <span style={{ color: '#9ca3af' }}>{'>'}</span>
-        <span>Our Clients</span>
-      </div>
+      <nav className="breadcrumbs" aria-label="breadcrumb">
+        <Link to="/" className="breadcrumb-home-link" aria-label="Home">
+          <GoHome size={20} />
+        </Link>
+        <span className="breadcrumb-sep">{'>'}</span>
+        <span className="breadcrumb-current">Our Work</span>
+      </nav>
 
       <div className="hero-section">
         <div className="hero-text">
-          <div className="subtitle-top">Our Clients</div>
+          <div className="subtitle-top">Our Work</div>
           <h1 className="hero-title">
             Over 10 Years of<br />Over Delivering<span className="dot">.</span>
           </h1>
@@ -96,7 +98,7 @@ export default function OurWork() {
               <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=600" alt="Google" />
               <div className="ow-hero-overlay">
                 <div className="hero-logo">Google</div>
-                <div className="case-study-link">Case study <FiArrowRight /></div>
+                {/* <div className="case-study-link">Case study <FiArrowRight /></div> */}
               </div>
             </div>
             <div className="hero-image-wrapper" style={{ height: '220px' }}>
@@ -108,10 +110,10 @@ export default function OurWork() {
           </div>
           <div className="hero-col right">
             <div className="hero-image-wrapper" style={{ height: '480px' }}>
-              <img src="https://images.unsplash.com/photo-1631522851493-27e69f8de6df?auto=format&fit=crop&q=80&w=600" alt="Rolls Royce" />
+              <img src="https://plus.unsplash.com/premium_photo-1661297460381-f75b8ae69a0f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Nexara Motors" />
               <div className="ow-hero-overlay" style={{ background: 'linear-gradient(to bottom, transparent, rgba(0,0,0,0.9))' }}>
-                <div className="hero-logo" style={{ fontFamily: 'serif', letterSpacing: '2px', fontSize: '28px' }}>ROLLS ROYCE</div>
-                <div className="case-study-link">Case study <FiArrowRight /></div>
+                <div className="hero-logo" style={{ fontFamily: 'serif', letterSpacing: '3px', fontSize: '26px', textTransform: 'uppercase' }}>TATA PLAY FIBER</div>
+                {/* <div className="case-study-link">Case study <FiArrowRight /></div> */}
               </div>
             </div>
           </div>

@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import "./hero-section.css"
+import { Paths } from "../../../constants/route-paths.constants";
 
 export default function HeroSection() {
+  const navigate = useNavigate();
   return (
     <>
       <section className="hero position-relative w-100 overflow-hidden d-flex align-items-center">
@@ -30,7 +33,7 @@ export default function HeroSection() {
               </p>
 
               <div className="hero-actions d-flex flex-column align-items-start gap-3">
-                <button className="hero-btn">
+                <button className="hero-btn" onClick={()=>navigate(`/${Paths.contactUs}`)}>
                   Schedule a Call
                 </button>
               </div>

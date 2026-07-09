@@ -3,8 +3,59 @@
     color: #1a1a1a;
     min-height: 100vh;
     font-family: 'Inter', sans-serif;
-    padding: 120px 5% 100px;
+    padding: 60px 5% 100px;
 }
+
+/* ==========================
+   Breadcrumb Nav (service page style)
+   ========================== */
+.blog-breadcrumbs {
+    font-size: 0.875rem;
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-breadcrumb-list {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.blog-breadcrumb-item {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #374151;
+}
+
+.blog-breadcrumb-item + .blog-breadcrumb-item::before {
+    content: ">";
+    color: #9ca3af;
+    padding: 0 8px;
+}
+
+.blog-breadcrumb-link {
+    color: #374151;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.2s ease;
+}
+
+.blog-breadcrumb-link:hover {
+    color: #ff5722;
+}
+
+.blog-breadcrumb-current {
+    font-weight: 700;
+    color: #111827;
+}
+
 
 .blog-grid-container {
     max-width: 1200px;

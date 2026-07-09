@@ -1,40 +1,9 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Paths } from '../../constants/route-paths.constants';
+import { blogPosts } from '../../data/blogs.data';
 import './blog.css';
-
-const blogPosts = [
-    {
-        id: '1',
-        title: 'Can AI-Generated Art Make Your Brand More Human?',
-        date: '10 Jul, 2025',
-        image: '/images/blog_light_1.png'
-    },
-    {
-        id: '2',
-        title: 'Beyond Stock: How AI Image Generation Is Revolutionizing Visual...',
-        date: '27 Jun, 2025',
-        image: '/images/blog_light_5.png'
-    },
-    {
-        id: '3',
-        title: 'Unlocking Visual Precision: Why Custom AI Image Prompts Are the...',
-        date: '27 Jun, 2025',
-        image: '/images/blog_light_3.png'
-    },
-    {
-        id: '4',
-        title: 'Faces of the Future: How AI Avatar Design Is Transforming Brand Identit...',
-        date: '27 Jun, 2025',
-        image: '/images/blog_light_4.png'
-    },
-    {
-        id: '5',
-        title: 'Rise of the AI Artist: How Brands Are Tapping into Machine-Driven...',
-        date: '27 Jun, 2025',
-        image: '/images/blog_light_5.png'
-    }
-];
+import { GoHome } from 'react-icons/go';
 
 export default function Blog() {
     useEffect(() => {
@@ -43,6 +12,25 @@ export default function Blog() {
 
     return (
         <div className="blog-listing-page">
+            <nav className="blog-breadcrumbs" aria-label="breadcrumb">
+                <ol className="blog-breadcrumb-list">
+                    <li className="blog-breadcrumb-item">
+                        <Link to="/" className="blog-breadcrumb-link home-icon-link" aria-label="Home">
+                            <GoHome size={20} />
+                        </Link>
+                    </li>
+                    <li className="blog-breadcrumb-item blog-breadcrumb-current">Blog</li>
+                </ol>
+            </nav>
+
+            <div style={{ maxWidth: '1200px', margin: '0 auto 60px' }}>
+                <h1 style={{ fontSize: '48px', fontWeight: 700, color: '#1e293b', margin: '0 0 12px', lineHeight: 1.15 }}>
+                    Our Blog &amp; Insights
+                </h1>
+                <p style={{ fontSize: '18px', color: '#64748b', margin: 0, fontWeight: 400 }}>
+                    Ideas, perspectives, and deep dives from the Solvify Tech team.
+                </p>
+            </div>
             <div className="blog-grid-container">
                 <div className="blog-grid-layout">
                     {blogPosts.map((post) => (

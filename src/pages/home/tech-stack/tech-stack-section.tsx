@@ -83,12 +83,12 @@ export default function TechStack() {
               Unblock execution across the SDLC<span className="dot">.</span>
             </h2>
           </div>
-          <div className="link-area">
+          {/* <div className="link-area">
             <a href="#" className={`everything-link d-inline-flex align-items-center gap-2 animate-slide-up ${isVisible ? "is-visible" : ""}`}>
               Everything we do
               <span className="arrow">→</span>
             </a>
-          </div>
+          </div> */}
         </div>
 
         <div className="row g-4">

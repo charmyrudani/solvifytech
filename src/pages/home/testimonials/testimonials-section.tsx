@@ -149,12 +149,12 @@ export default function TestimonialsSection() {
               <p className="testimonials-subtitle">
                 1,200+ projects executed successfully and an average relationship of over 3 years.
               </p>
-              <div className="link-wrapper">
+              {/* <div className="link-wrapper">
                 <a href="#" className="our-hits-link d-inline-flex align-items-center gap-2">
                   Our greatest hits 
                   <span className="hits-arrow">→</span>
                 </a>
-              </div>
+              </div> */}
             </div>
 
             {/* Carousel Slider */}
@@ -203,12 +203,12 @@ export default function TestimonialsSection() {
                         <div className="brand-logo-wrapper">
                           {t.logo}
                         </div>
-                        <div className="arrow-circle-link">
+                        {/* <div className="arrow-circle-link">
                           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="card-arrow-icon">
                             <line x1="5" y1="12" x2="19" y2="12"></line>
                             <polyline points="12 5 19 12 12 19"></polyline>
                           </svg>
-                        </div>
+                        </div> */}
                       </div>
 
                       {/* Middle section: Quote */}

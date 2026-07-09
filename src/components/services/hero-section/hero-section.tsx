@@ -5,11 +5,11 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './hero-section.css';
-import { AiFillHome } from 'react-icons/ai';
 import devin from '/images/tool-tech/devin.svg'
 import cursor from '/images/tool-tech/cursor.svg'
 import cody from '/images/tool-tech/cody.svg'
 import copilot from '/images/tool-tech/copilot.svg'
+import { GoHome } from 'react-icons/go';
 
 const HeroSection = ({ data }: any) => {
   const hero = data.hero;
@@ -37,10 +37,10 @@ const HeroSection = ({ data }: any) => {
             <ol className="breadcrumb mb-0">
               <li className="breadcrumb-item">
                 <Link to="/" className="breadcrumb-link home-icon-link">
-                  <AiFillHome size={21} />
+                  <GoHome size={21} />
                 </Link>
               </li>
-              <li className="breadcrumb-item text-muted">Services</li>
+              {/* <li className="breadcrumb-item text-muted">Services</li> */}
               <li className="breadcrumb-item active" aria-current="page">
                 {hero.serviceName}
               </li>
