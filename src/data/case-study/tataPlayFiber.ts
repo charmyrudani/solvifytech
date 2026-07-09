@@ -1,5 +1,8 @@
+import tpf from '/images/our-work/tata-play-fiber.webp'
+
 export const tataPlayFiber = {
   title: "Tata Play Fiber",
+  image: tpf,
   subtitle: "Delivering a Custom Enterprise Digital Profile Experience",
   industry: "Telecommunications",
   client: "Tata Play Fiber",

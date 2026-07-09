@@ -1,5 +1,8 @@
+import tap1ceimg from '/images/our-work/tap1ce.webp'
+
 export const tap1ce = {
   title: "Tap1ce",
+  image: tap1ceimg,
   subtitle: "Building a Modern Digital Networking Ecosystem",
   industry: "SaaS / Networking Technology",
   services: [

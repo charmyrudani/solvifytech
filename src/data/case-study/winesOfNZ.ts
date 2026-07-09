@@ -1,5 +1,8 @@
+import winesOfNz from '/images/our-work/wines-of-nz.webp'
+
 export const winesOfNZ = {
   title: "Wines of NZ",
+  image: winesOfNz,
   subtitle: "Building a Controlled Multi-Vendor Commerce Platform on Shopify",
   industry: "Wine & Beverage eCommerce",
   services: [

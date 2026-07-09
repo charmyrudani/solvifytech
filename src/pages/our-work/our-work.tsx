@@ -13,11 +13,10 @@ import { Paths } from "../../constants/route-paths.constants";
 
 export default function OurWork() {
   const col1 = [
-    { name: 'MARRIOT', img: marriott, hasLink: true, link: `/${Paths.ourWork}/${Paths.marriott}` },
+    { name: 'MARRIOT', img: marriott, hasLink: true, link: `/${Paths.ourWork}/${Paths.marriott}`, text: "Developed a custom-branded digital profile platform with seamless SSO authentication, enabling Marriott users to securely access personalized dashboards through a single login experience.", },
     { name: 'GRAINGER', img: 'https://placehold.co/150x50/ffffff/000000?text=GRAINGER&font=montserrat' },
-    // { name: 'arlo', img: 'https://placehold.co/120x60/ffffff/000000?text=arlo&font=montserrat', hasLink: true },
     // { name: 'AVIGILON', img: 'https://placehold.co/150x50/ffffff/000000?text=AVIGILON&font=montserrat', hasLink: true },
-    { name: 'TATA PLAY FIBER', img: tataPlayFiber, hasLink: true, text: "BairesDev has been a great business partner, providing quality development resources to augment a High-performing and fast-moving development team.",  link: `/${Paths.ourWork}/${Paths.tataPlayFiber}` },
+    { name: 'TATA PLAY FIBER', img: tataPlayFiber, hasLink: true, text: "Built an enterprise-ready digital profile experience with custom branding, flexible layouts, and scalable architecture, allowing Tata Play Fiber to deliver personalized user experiences.", link: `/${Paths.ourWork}/${Paths.tataPlayFiber}` },
     { name: 'chime', img: 'https://placehold.co/120x50/ffffff/000000?text=chime&font=montserrat' },
     { name: 'ebay', img: 'https://placehold.co/120x50/ffffff/000000?text=ebay&font=montserrat' },
   ];
@@ -25,16 +24,16 @@ export default function OurWork() {
   const col2 = [
     { name: 'abbvie', img: 'https://placehold.co/150x50/ffffff/000000?text=abbvie&font=montserrat' },
     // { name: 'ACUMEN', img: 'https://placehold.co/150x50/ffffff/000000?text=ACUMEN&font=montserrat', hasLink: true },
-    { name: 'DOCCURE', img: doccure, hasLink: true, text: "From our very first meeting with the team at BairesDev, we were confident that we'd selected the best partner.", link: `/${Paths.ourWork}/${Paths.doccure}` },
+    { name: 'DOCCURE', img: doccure, hasLink: true, text: "Engineered a comprehensive dermatology practice management platform featuring EMR, appointment scheduling, clinical imaging, billing, AI assistance, and multi-branch clinic management.", link: `/${Paths.ourWork}/${Paths.doccure}` },
     { name: 'BBVA', img: 'https://placehold.co/120x50/ffffff/000000?text=BBVA&font=montserrat' },
-    { name: 'BURGER KING', img: 'https://placehold.co/100x100/ffffff/000000?text=BURGER+KING&font=montserrat' },
-    { name: 'WINES OF NZ', img: winesOfNZ, hasLink: true, text: "By working with BairesDev we were able to quickly augment our internal staff and find exactly what talent we were looking for.",  link: `/${Paths.ourWork}/${Paths.winesOfNZ}` },
+    { name: 'arlo', img: 'https://placehold.co/120x60/ffffff/000000?text=arlo&font=montserrat' },
+    { name: 'WINES OF NZ', img: winesOfNZ, hasLink: true, text: "Created a controlled multi-vendor Shopify ecosystem with custom vendor portals, automated product synchronization, inventory management, and centralized operational workflows.", link: `/${Paths.ourWork}/${Paths.winesOfNZ}` },
   ];
 
   const col3 = [
-    { name: 'tap1ce', img: tap1ce, hasLink: true, text: "We are extremely satisfied with their collaboration and achievement. We are happy to have given BairesDev a chance to earn our trust.", link: `/${Paths.ourWork}/${Paths.tap1ce}` },
-    { name: 'Collective Creative Labs', img: ccl, hasLink: true, text: "Creating a new product is the fun part of programming, and the BairesDev team was great at it, but what wowed me was the curiosity and determination that drove their approach to QA.", link: `/${Paths.ourWork}/${Paths.collectiveCreativeLabs}` },
-    { name: 'Hire Global Talent', img: hgt, hasLink: true,  link: `/${Paths.ourWork}/${Paths.hireGlobalTalent}`  },
+    { name: 'tap1ce', img: tap1ce, hasLink: true, text: "Built a scalable digital networking platform featuring NFC business cards, QR sharing, customizable profiles, lead management, enterprise dashboards, and powerful third-party integrations.", link: `/${Paths.ourWork}/${Paths.tap1ce}` },
+    { name: 'Collective Creative Labs', img: ccl, hasLink: true, text: "Developed a scalable headless CMS ecosystem with dynamic campaign pages, SEO optimization, and continuous platform enhancements to support long-term digital growth.", link: `/${Paths.ourWork}/${Paths.collectiveCreativeLabs}` },
+    { name: 'Hire Global Talent', img: hgt, hasLink: true, link: `/${Paths.ourWork}/${Paths.hireGlobalTalent}`, text: "Designed a complete recruitment platform with dedicated portals for employers, candidates, and administrators, streamlining hiring workflows through role-based management.", },
     { name: 'care.com', img: 'https://placehold.co/120x50/ffffff/000000?text=care.com&font=montserrat' },
     // { name: 'CROPTRAK', img: 'https://placehold.co/150x50/ffffff/000000?text=CROPTRAK&font=montserrat', hasLink: true },
     // { name: 'enigma', img: 'https://placehold.co/120x50/ffffff/000000?text=enigma&font=montserrat', hasLink: true },

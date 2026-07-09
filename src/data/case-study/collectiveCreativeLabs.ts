@@ -1,5 +1,8 @@
+import ccl from '/images/our-work/ccl.webp'
+
 export const collectiveCreativeLabs = {
   title: "Collective Creative Labs",
+  image: ccl,
   subtitle:
     "Building a Scalable Digital Ecosystem for a Fast-Growing Creative Agency",
   industry: "Creative & Marketing Agency",

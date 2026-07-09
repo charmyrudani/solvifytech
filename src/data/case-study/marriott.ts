@@ -1,5 +1,8 @@
+import marriottimg from '/images/our-work/marriott.webp'
+
 export const marriott = {
   title: "Marriott",
+  image: marriottimg,
   subtitle: "Custom Digital Profile Theme with SSO-Based Portal Access",
   industry: "Hospitality",
   services: [

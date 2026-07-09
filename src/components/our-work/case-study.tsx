@@ -42,6 +42,7 @@ const COLOR_MAP: Record<string, string> = {
 /* ─── Display component — receives whole data object as prop ── */
 function CaseStudy({ data }: { data: CaseStudyData }) {
   const {
+    image,
     title,
     subtitle,
     industry,
@@ -120,9 +121,7 @@ function CaseStudy({ data }: { data: CaseStudyData }) {
             <p className="tap1ce-summary-desc">{solution.description}</p>
           </div>
           <div className="cs-logo-card">
-            <span style={{ fontSize: "1.4rem", fontWeight: 700, color: "var(--color-primary)" }}>
-              {title}
-            </span>
+              <img src={image} alt={title} height={92}/>
           </div>
         </div>
 
@@ -193,6 +192,27 @@ function CaseStudy({ data }: { data: CaseStudyData }) {
                   <li key={item}>{item}</li>
                 ))}
               </ul>
+            </div>
+          )}
+
+          {/* USER ROLES — only for hire-global-talent */}
+          {solution.userRoles && (
+            <div className="cs-user-roles">
+              {Object.values(solution.userRoles as Record<string, { title: string; capabilities: readonly string[] }>).map(
+                (role) => (
+                  <div className="cs-role-card" key={role.title}>
+                    <h3 className="cs-role-title">{role.title}</h3>
+                    <ul className="cs-role-list">
+                      {role.capabilities.map((cap: string) => (
+                        <li key={cap}>
+                          <span className="cs-role-check">✓</span>
+                          {cap}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )
+              )}
             </div>
           )}
         </div>

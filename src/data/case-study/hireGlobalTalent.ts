@@ -1,5 +1,8 @@
+import hgt from '/images/our-work/hgt.webp'
+
 export const hireGlobalTalent = {
   title: "Hire Global Talent",
+  image: hgt,
   subtitle:
     "Building a Complete Hiring Portal for Employers, Candidates & Admin Teams",
   industry: "Recruitment / Staffing",

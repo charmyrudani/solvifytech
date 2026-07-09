@@ -1,5 +1,8 @@
+import doccureimg from '/images/our-work/doccure.webp'
+
 export const doccure = {
   title: "DOCCURE",
+  image: doccureimg,
   subtitle: "Building India's Dermatology-First Practice Management Platform",
   industry: "Healthcare SaaS",
   services: [
