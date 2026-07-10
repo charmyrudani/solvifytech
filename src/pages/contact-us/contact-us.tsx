@@ -23,34 +23,7 @@ export default function ContactUs() {
       {/* Contact Section */}
       <div className="contact-main">
         <div className="contact-container">
-          <div className="contact-left">
-            <div className="contact-logo">
-              <img src={logo} alt="SolvifyTech" className="logo-image"/>
-            </div>
-            
-            <p className="contact-intro-text">
-              SolvifyTech is your trusted partner for digital transformation, offering expert solutions in web development, design, mobile apps, and beyond. Let's build something extraordinary together.
-            </p>
-
-            <div className="contact-divider"></div>
-
-            <div className="contact-inquiries">
-              <h4>Project inquiries</h4>
-              <a href="mailto:contact@solvifytech.in" className="inquiry-item">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                <p>contact@solvifytech.in</p>
-              </a>
-              <a href="tel:+919727326326" className="inquiry-item">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                <p>+91 97273 26326</p>
-              </a>
-            </div>
-
-            <div className="contact-buttons">
-              <button className="btn-light">Book Free Consultation Call</button>
-              <button className="btn-dark">Direct Chat to Executive</button>
-            </div>
-          </div>
+         
 
           <div className="contact-right">
             <div className="contact-heading">
@@ -122,6 +95,38 @@ export default function ContactUs() {
 
               <button type="button" className="submit-button">Submit</button>
             </form>
+          </div>
+           <div className="contact-left">
+            <div className="contact-logo">
+              <img src={logo} alt="SolvifyTech" className="logo-image"/>
+            </div>
+            
+            <p className="contact-intro-text">
+              SolvifyTech is your trusted partner for digital transformation, offering expert solutions in web development, design, mobile apps, and beyond. Let's build something extraordinary together.
+            </p>
+
+            <div className="contact-divider"></div>
+
+            <div className="contact-inquiries">
+              <h4>Project inquiries</h4>
+              <a href="mailto:contact@solvifytech.in" className="inquiry-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <p>contact@solvifytech.in</p>
+              </a>
+              <a href="tel:+919727326326" className="inquiry-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <p>+91 97273 26326</p>
+              </a>
+              <div className="inquiry-item ">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <p>C2-410 IT Park, Mota Varachha Main Road, Surat, Gujarat 39500</p>
+              </div>
+            </div>
+
+            <div className="contact-buttons">
+              <button className="btn-light">Book Free Consultation Call</button>
+              <button className="btn-dark">Direct Chat to Executive</button>
+            </div>
           </div>
         </div>
       </div>

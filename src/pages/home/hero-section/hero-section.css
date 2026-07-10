@@ -118,7 +118,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 32px;
+  height:52px;
   color: var(--color-text-gray);
   transition: color 0.2s ease;
 }
@@ -133,7 +133,7 @@
 }
 
 .salesforce-logo {
-  height: 32px;
+  height: 45px;
 }
 
 .adobe-logo {

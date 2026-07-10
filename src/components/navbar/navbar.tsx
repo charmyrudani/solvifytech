@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '/images/logo/solvify-tech-black.webp';
 import './navbar.css';
 import { Paths } from '../../constants/route-paths.constants';
@@ -9,15 +9,12 @@ const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [mobileActiveAccordion, setMobileActiveAccordion] = useState<string | null>(null);
   const [isScrolled, setIsScrolled] = useState(false);
-  const location = useLocation();
 
-  const [prevPathname, setPrevPathname] = useState(location.pathname);
-  if (location.pathname !== prevPathname) {
-    setPrevPathname(location.pathname);
+  const closeMenu = () => {
     setActiveDropdown(null);
     setIsMobileMenuOpen(false);
     setMobileActiveAccordion(null);
-  }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -79,7 +76,7 @@ const Navbar: React.FC = () => {
                   </svg>
                 </Link>
 
-                <div className={`megamenu-dropdown ${activeDropdown === 'services' ? 'visible' : ''}`}>
+                <div className={`megamenu-dropdown ${activeDropdown === 'services' ? 'visible' : ''}`} onClick={closeMenu}>
                   <div className="megamenu-inner-grid megamenu-services-grid">
                     <div className="megamenu-left-panel">
                       <h3 className="megamenu-title">Services</h3>
@@ -166,7 +163,7 @@ const Navbar: React.FC = () => {
                   </svg>
                 </Link>
 
-                <div className={`megamenu-dropdown ${activeDropdown === 'technologies' ? 'visible' : ''}`}>
+                <div className={`megamenu-dropdown ${activeDropdown === 'technologies' ? 'visible' : ''}`} onClick={closeMenu}>
                   <div className="megamenu-inner-grid">
                     <div className="megamenu-left-panel">
                       <h3 className="megamenu-title">Technologies</h3>
@@ -299,7 +296,7 @@ const Navbar: React.FC = () => {
                   </svg>
                 </Link>
 
-                <div className={`megamenu-dropdown ${activeDropdown === 'about' ? 'visible' : ''}`}>
+                <div className={`megamenu-dropdown ${activeDropdown === 'about' ? 'visible' : ''}`} onClick={closeMenu}>
                   <div className="megamenu-inner-grid">
                     <div className="megamenu-left-panel">
                       <h3 className="megamenu-title">About</h3>
@@ -366,13 +363,13 @@ const Navbar: React.FC = () => {
               </li>
 
               {/* OTHER FLAT LINKS */}
-              <li className="navbar-menu-item">
+              <li className="navbar-menu-item" onClick={closeMenu}>
                 <NavLink to={Paths.ourWork} className={({ isActive }) => `navbar-link-btn flat-link ${isActive ? 'active' : ''}`}>
                   Our Work
                 </NavLink>
               </li>
 
-              <li className="navbar-menu-item">
+              <li className="navbar-menu-item" onClick={closeMenu}>
                 <NavLink to={Paths.blog} className={({ isActive }) => `navbar-link-btn flat-link ${isActive ? 'active' : ''}`}>
                   Blog
                 </NavLink>
@@ -409,7 +406,10 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Slide-out Menu Panel */}
       <div className={`mobile-menu-drawer ${isMobileMenuOpen ? 'open' : ''}`}>
-        <div className="mobile-menu-inner">
+        <div className="mobile-menu-inner" onClick={(e) => {
+          // If a link is clicked in mobile, close the menu
+          if ((e.target as HTMLElement).closest('a')) closeMenu();
+        }}>
           <ul className="mobile-menu-list">
             {/* SERVICES ACCORDION */}
             <li className="mobile-menu-item">

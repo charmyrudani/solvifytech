@@ -33,7 +33,7 @@ export default function Team() {
   return (
     <div className={`team-wrapper ${isCollapsed ? 'collapsed' : ''}`} ref={teamRef}>
       <div className="team-heading">
-        <span className="team-eyebrow">Who we are</span>
+        {/* <span className="team-eyebrow">Who we are</span> */}
         <h2 className="team-title">Meet Our <span className="team-title-accent">Team</span><span className="dot">.</span></h2>
         <p className="team-subtitle">A diverse group of talented professionals dedicated to building exceptional digital products.</p>
       </div>

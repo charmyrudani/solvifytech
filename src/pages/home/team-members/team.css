@@ -10,9 +10,6 @@
   background: #ffffff;
 }
 
-/* ==========================
-   Team Section Heading
-   ========================== */
 .team-heading {
   text-align: center;
   padding: 60px 24px 0;
@@ -61,7 +58,7 @@
   justify-content: center;
   align-items: flex-end;
   gap: 40px;
-  padding: 100px 40px;
+  padding: 30px 40px 100px 40px;
   background: #ffffff;
   flex-wrap: wrap;
 }
@@ -88,23 +85,17 @@
               border-color 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ==========================
-   Orange Half Circle (Dev 1)
-   ========================== */
 .half-circle .shape {
   position: absolute;
   width: 150px;
   height: 280px;
   background: #ff5c35;
   border-radius: 0 150px 150px 0;
-  bottom: 10px;
-  left: 40px;
-  transform: rotate(40deg);
+  bottom: -14px;
+  left: 50px;
+  transform: rotate(60deg);
 }
 
-/* ==========================
-   Blue Square (Dev 2)
-   ========================== */
 .square .shape {
   position: absolute;
   width: 210px;
@@ -115,9 +106,6 @@
   transform: rotate(5deg);
 }
 
-/* ==========================
-   Peach Circle (Dev 3)
-   ========================== */
 .circle .shape {
   position: absolute;
   width: 240px;
@@ -128,9 +116,6 @@
   left: -5px;
 }
 
-/* ==========================
-   Yellow Triangle (Dev 4)
-   ========================== */
 .triangle .shape {
   position: absolute;
   width: 0;
@@ -139,12 +124,9 @@
   border-right: 125px solid transparent;
   border-top: 200px solid #f4a100;
   bottom: 60px;
-  left: -15px;
+  left: -25px;
 }
 
-/* ==========================
-   Green Semi Circle (Dev 5)
-   ========================== */
 .semi-circle .shape {
   position: absolute;
   width: 240px;
@@ -152,22 +134,16 @@
   background: #a7e6d3;
   border-radius: 115px 115px 0 0;
   bottom:100px;
-  left: 1px;
+  left: -10px;
   transform: rotate(58deg);
 }
 
-/* ==========================
-   Z-Indexing for Overlay
-   ========================== */
 .dev1 { z-index: 3; }
 .dev2 { z-index: 4; }
-.dev3 { z-index: 5; } /* Center developer on top */
+.dev3 { z-index: 5; }
 .dev4 { z-index: 4; }
 .dev5 { z-index: 3; }
 
-/* ==========================
-   Collapsed Animation States
-   ========================== */
 @media (min-width: 1025px) {
   .collapsed .dev1 {
     transform: translateX(95px);
@@ -199,9 +175,6 @@
   border-top-color: #cbd5e1 !important;
 }
 
-/* ==========================
-   Label Container & Transitions
-   ========================== */
 .label-container {
   position: absolute;
   bottom: 0;
@@ -238,7 +211,6 @@
   transform: translateY(10px);
 }
 
-/* Collapsed label states */
 .collapsed .label-default {
   opacity: 0;
   visibility: hidden;
@@ -251,9 +223,6 @@
   transform: translateY(0);
 }
 
-/* ==========================
-   Responsive Layouts
-   ========================== */
 @media (max-width: 1100px) {
   .team {
     justify-content: center;
