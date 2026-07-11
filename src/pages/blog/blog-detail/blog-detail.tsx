@@ -87,7 +87,7 @@ const blogData = {
         title: 'BEYOND STOCK: HOW AI IMAGE GENERATION IS REVOLUTIONIZING VISUALS',
         date: '27 Jun, 2025',
         views: '850',
-        image: '/images/blog_light_5png',
+        image: '/images/blog_light_5.png',
         excerpt: 'Stock photography has long been a crutch for digital marketers and web designers, often resulting in generic and uninspired digital experiences. This article dives into why AI image generation is rapidly replacing traditional stock sites and how it unlocks unprecedented creative freedom for brands of all sizes.',
         content: `
             <p>For decades, digital marketing has relied heavily on stock photography. While convenient, stock photos often suffer from a major flaw: they look like stock photos. Forced smiles, generic office environments, and awkwardly staged scenarios do very little to communicate a brand's unique value proposition.</p>

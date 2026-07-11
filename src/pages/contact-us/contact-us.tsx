@@ -11,6 +11,27 @@ const faqData = [
   { q: "How fast will I receive deliverables?", a: "Turnaround times depend on the complexity of your request, but our goal is to deliver high-quality solutions quickly and efficiently to keep your workflow smooth." }
 ];
 
+const projectTypes = [
+  "Website Development",
+  "Mobile App Development",
+  "Custom Software",
+  "ERP & CRM",
+  "AI & Automation",
+  "Shopify & E-commerce",
+  "UI/UX & Graphics",
+  "Digital Marketing",
+  "Branding",
+  "Other",
+];
+
+const inquirySources = [
+  "Google",
+  "Social Media",
+  "Referral",
+  "Advertisement",
+  "Other",
+];
+
 export default function ContactUs() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
 
@@ -23,7 +44,7 @@ export default function ContactUs() {
       {/* Contact Section */}
       <div className="contact-main">
         <div className="contact-container">
-         
+
 
           <div className="contact-right">
             <div className="contact-heading">
@@ -56,27 +77,28 @@ export default function ContactUs() {
                     <input type="tel" placeholder="Enter your phone" />
                   </div>
                 </div>
+                
                 <div className="input-wrapper">
                   <label>Project Type<span className="required">*</span></label>
                   <select defaultValue="">
-                    <option value="" disabled>Select project type</option>
-                    <option value="Graphics">Graphics</option>
-                    <option value="UI/UX">UI/UX</option>
-                    <option value="Web Development">Web Development</option>
-                    <option value="Mobile App">Mobile App</option>
-                    <option value="E-commerce">E-commerce</option>
-                    <option value="Other">Other</option>
+                    <option value="" disabled>
+                      Select project type
+                    </option>
+                    {projectTypes.map((type) => (
+                      <option key={type} value={type}> {type} </option>
+                    ))}
                   </select>
                 </div>
+
                 <div className="input-wrapper">
                   <label>How did you hear about us?<span className="required">*</span></label>
                   <select defaultValue="">
-                    <option value="" disabled>Select an option</option>
-                    <option value="Google">Google</option>
-                    <option value="Social Media">Social Media</option>
-                    <option value="Referral">Referral</option>
-                    <option value="Advertisement">Advertisement</option>
-                    <option value="Other">Other</option>
+                    <option value="" disabled>
+                      Select an option
+                    </option>
+                    {inquirySources.map((source) => (
+                      <option key={source} value={source}> {source} </option>
+                    ))}
                   </select>
                 </div>
               </div>
@@ -96,11 +118,11 @@ export default function ContactUs() {
               <button type="button" className="submit-button">Submit</button>
             </form>
           </div>
-           <div className="contact-left">
+          <div className="contact-left">
             <div className="contact-logo">
-              <img src={logo} alt="SolvifyTech" className="logo-image"/>
+              <img src={logo} alt="SolvifyTech" className="logo-image" />
             </div>
-            
+
             <p className="contact-intro-text">
               SolvifyTech is your trusted partner for digital transformation, offering expert solutions in web development, design, mobile apps, and beyond. Let's build something extraordinary together.
             </p>
@@ -164,11 +186,11 @@ export default function ContactUs() {
             <div className="faq-item" key={i}>
               <div className="faq-question" onClick={() => toggleFaq(i)}>
                 <p>{faq.q}</p>
-                <div 
-                  className="faq-icon" 
-                  style={{ 
-                    transform: openFaqIndex === i ? 'rotate(180deg)' : 'rotate(0deg)', 
-                    transition: 'transform 0.3s ease' 
+                <div
+                  className="faq-icon"
+                  style={{
+                    transform: openFaqIndex === i ? 'rotate(180deg)' : 'rotate(0deg)',
+                    transition: 'transform 0.3s ease'
                   }}
                 >
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>

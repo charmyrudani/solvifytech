@@ -158,8 +158,8 @@
 .tap1ce-summary-desc {
   color: var(--color-text-muted);
   max-width: 620px;
-  font-size: 2.5rem;
-  line-height: 98%;
+  font-size: 2rem;
+  line-height: 36px;
 }
 
 .cs-meta-bar {
@@ -1042,7 +1042,7 @@
 }
 
 .cs-ecosystem-card-title {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--color-text-dark);
   margin: 0 0 14px;
@@ -1063,7 +1063,7 @@
   display: flex;
   align-items: center;
   gap: 9px;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: var(--color-text-gray);
   font-weight: 500;
 }

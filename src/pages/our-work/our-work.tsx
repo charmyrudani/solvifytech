@@ -88,13 +88,11 @@ export default function OurWork() {
         <div className="hero-text">
           <div className="subtitle-top">Our Work</div>
           <h1 className="hero-title">
-            Over 10 Years of<br />Over Delivering<span className="dot">.</span>
+            {/* Over 10 Years of<br />Over Delivering<span className="dot">.</span> */}
+            Building Digital Products That Drive Business Growth<span className="dot">.</span>
           </h1>
           <p className="hero-description">
-            500+ active clients and a 96%<br />
-            retention rate, earned through AI-<br />
-            augmented delivery that compounds<br />
-            value across every engagement.
+            From startups to enterprises, we design, develop, and scale websites, eCommerce platforms, ERP systems, AI-powered solutions, and custom software that deliver measurable business results. Every project reflects our commitment to innovation, performance, and long-term partnerships.
           </p>
         </div>
 

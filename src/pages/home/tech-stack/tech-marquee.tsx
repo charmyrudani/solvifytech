@@ -1,7 +1,7 @@
 import "./tech-marquee.css"
 
-const row1Items = [".js", "Java", "React", ".NET", "Python", "C#", "Rails", "Node", "Kotlin", "AWS", "Docker", "MySQL"]
-const row2Items = ["Swift", "Angular", "PHP", "Android", "iOS", "Golang", "Vue.js", "C++", "JavaScript", "TypeScript", "Kubernetes", "GraphQL"]
+const row1Items = ["JS", "Node", "React", "Python", "Kotlin", "AWS", "Docker", "MySQL", "Next"]
+const row2Items = ["Angular", "Android", "iOS", "Vue.js", "C++", "JavaScript", "TypeScript", "Kubernetes"]
 
 export default function TechMarquee() {
   return (

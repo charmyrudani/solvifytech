@@ -80,22 +80,22 @@ const Navbar: React.FC = () => {
                   <div className="megamenu-inner-grid megamenu-services-grid">
                     <div className="megamenu-left-panel">
                       <h3 className="megamenu-title">Services</h3>
-                      <p className="megamenu-subtitle">Tailored engineering for every stage of growth.</p>
+                      <p className="megamenu-subtitle">Engineering digital products that scale with your business.</p>
                       <div className="mm-stats-grid">
                         <div className="mm-stat-card">
-                          <span className="mm-stat-value">500<span className="mm-stat-plus">+ </span></span>
+                          <span className="mm-stat-value">120<span className="mm-stat-plus">+ </span></span>
                           <span className="mm-stat-label">Active Clients</span>
                         </div>
                         <div className="mm-stat-card">
-                          <span className="mm-stat-value">96<span className="mm-stat-unit">% </span></span>
+                          <span className="mm-stat-value">98<span className="mm-stat-unit">% </span></span>
                           <span className="mm-stat-label">Retention Rate</span>
                         </div>
                         <div className="mm-stat-card">
-                          <span className="mm-stat-value">10<span className="mm-stat-unit">+ </span></span>
+                          <span className="mm-stat-value">9<span className="mm-stat-unit">+ </span></span>
                           <span className="mm-stat-label">Years Delivering</span>
                         </div>
                         <div className="mm-stat-card">
-                          <span className="mm-stat-value">1.2<span className="mm-stat-unit">K+ </span></span>
+                          <span className="mm-stat-value">250<span className="mm-stat-unit">+ </span></span>
                           <span className="mm-stat-label">Projects Shipped</span>
                         </div>
                       </div>
@@ -167,23 +167,23 @@ const Navbar: React.FC = () => {
                   <div className="megamenu-inner-grid">
                     <div className="megamenu-left-panel">
                       <h3 className="megamenu-title">Technologies</h3>
-                      <p className="megamenu-subtitle">Top-tier engineers across every modern stack.</p>
+                      <p className="megamenu-subtitle">Modern technologies powering scalable digital products and enterprise solutions.</p>
                       <div className="mm-stats-grid">
                         <div className="mm-stat-card">
-                          <span className="mm-stat-value">100<span className="mm-stat-unit">+ </span></span>
-                          <span className="mm-stat-label">Technologies</span>
+                          <span className="mm-stat-value">50<span className="mm-stat-unit">+ </span></span>
+                          <span className="mm-stat-label">Modern Technologies</span>
                         </div>
                         <div className="mm-stat-card">
-                          <span className="mm-stat-value">Top<span className="mm-stat-unit"> 1% </span></span>
-                          <span className="mm-stat-label">Vetted Talent</span>
+                          <span className="mm-stat-value">Full-Stack </span>
+                          <span className="mm-stat-label">Development Expertise</span>
                         </div>
                         <div className="mm-stat-card">
-                          <span className="mm-stat-value">30<span className="mm-stat-unit">+ </span></span>
-                          <span className="mm-stat-label">Countries Served</span>
+                          <span className="mm-stat-value">Cloud-Native </span>
+                          <span className="mm-stat-label">Architecture</span>
                         </div>
                         <div className="mm-stat-card">
-                          <span className="mm-stat-value">48<span className="mm-stat-unit">h </span></span>
-                          <span className="mm-stat-label">Avg. Onboarding</span>
+                          <span className="mm-stat-value">AI-Powered </span>
+                          <span className="mm-stat-label">Solutions</span>
                         </div>
                       </div>
                     </div>
@@ -300,29 +300,29 @@ const Navbar: React.FC = () => {
                   <div className="megamenu-inner-grid">
                     <div className="megamenu-left-panel">
                       <h3 className="megamenu-title">About</h3>
-                      <p className="megamenu-subtitle">A decade of engineering excellence, worldwide.</p>
+                      <p className="megamenu-subtitle">Building innovative software, AI solutions, and digital experiences for businesses worldwide.</p>
                       <div className="mm-stats-grid">
                         <div className="mm-stat-card">
-                          <span className="mm-stat-value">2015</span>
+                          <span className="mm-stat-value">2022 </span>
                           <span className="mm-stat-label">Founded</span>
                         </div>
                         <div className="mm-stat-card">
-                          <span className="mm-stat-value">30<span className="mm-stat-unit">+ </span></span>
-                          <span className="mm-stat-label">Countries</span>
+                          <span className="mm-stat-value">120<span className="mm-stat-unit">+ </span></span>
+                          <span className="mm-stat-label">Happy Clients</span>
                         </div>
                         <div className="mm-stat-card">
-                          <span className="mm-stat-value">200<span className="mm-stat-unit">+ </span></span>
-                          <span className="mm-stat-label">Engineers</span>
+                          <span className="mm-stat-value">250<span className="mm-stat-unit">+ </span></span>
+                          <span className="mm-stat-label">Projects Delivered</span>
                         </div>
                         <div className="mm-stat-card">
-                          <span className="mm-stat-value">F500</span>
-                          <span className="mm-stat-label">Clients Served</span>
+                          <span className="mm-stat-value">22<span className="mm-stat-unit">+ </span></span>
+                          <span className="mm-stat-label">Technology Expert</span>
                         </div>
                       </div>
                     </div>
 
                     <div className="megamenu-column">
-                      <span className="megamenu-section-header">Inside BairesDev</span>
+                      <span className="megamenu-section-header">Inside SolvifyTech</span>
                       <div className="megamenu-links-list">
                         {/* <Link to="/about" className="grid-link">Our Leadership Team</Link>
                         <Link to="/about" className="grid-link">Our Tech Talent</Link>
