@@ -1,6 +1,8 @@
 .so-section {
   padding: 90px;
-  background: #fff;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  position: relative;
+  overflow: hidden;
 }
 
 .so-grid {
@@ -37,7 +39,6 @@
 
 .so-title {
   font-size: 38px;
-  /* font-weight: 600; */
   line-height: 1.18;
   letter-spacing: -0.5px;
   color: #0f172a;
@@ -45,8 +46,17 @@
 }
 
 @media (max-width: 767.98px) {
+  .so-section {
+    padding: 48px 15px;
+  }
   .so-title {
     font-size: 28px;
+    margin-bottom: 12px;
+  }
+  .so-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
   }
 }
 
@@ -61,7 +71,8 @@
 .so-image-wrap {
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(226, 232, 240, 0.8);
   flex-shrink: 0;
 }
 
@@ -101,7 +112,6 @@
   border-left-color: #10b981;
 }
 
-/* ── Trigger button ── */
 .so-accordion-trigger {
   width: 100%;
   background: none;

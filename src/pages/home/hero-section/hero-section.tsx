@@ -20,29 +20,27 @@ export default function HeroSection() {
           <div className="row">
             <div className="col-12 col-lg-7 hero-content">
               <h1>
-                Accelerate Your <br />
-                Roadmap With Our <br />
-                Vetted Nearshore <br />
+                Build Smarter Software. <br />
+                Automate Faster. <br />
                 <span className="ai-engineers-text">
-                  AI
-                  <span className="sparkle-wrapper">
-                    <svg className="sparkle-svg" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 2L14.85 9.15L22 12L14.85 14.85L12 22L9.15 14.85L2 12L9.15 9.15L12 2Z" />
-                    </svg>
-                  </span>
-                  {" "}Engineers
+                  Scale With Confidence.
                 </span>
               </h1>
 
               <p className="hero-subtitle">
-                Access 4,000+ timezone-aligned, AI-augmented software engineers
-                across 100+ technologies.
+                Solvifytech helps startups and growing businesses design, develop and scale AI-powered software, web platforms, mobile apps, Shopify solutions and business automation systems.
               </p>
 
-              <div className="hero-actions d-flex flex-column align-items-start gap-3">
+              <div className="hero-actions d-flex align-items-start gap-3">
                 <button className="hero-btn" onClick={() => navigate(`/${Paths.contactUs}`)}>
-                  Schedule a Call
+                  Book a Free Discovery Call
                 </button>
+                <button className="hero-work-btn" onClick={() => navigate(`/${Paths.ourWork}`)}>
+                  Explore Our Work
+                </button>
+              </div>
+              <div>
+                <h5 className="support-text mt-4">Trusted by startups, agencies and growing businesses worldwide.</h5>
               </div>
             </div>
           </div>
@@ -54,13 +52,13 @@ export default function HeroSection() {
         </div>
       </section>
 
-      <section className="endorsed-section py-5 my-5 bg-white position-relative">
+      <section className="endorsed-section py-3 py-md-5 my-0 my-md-5 bg-white position-relative">
         <div className="container">
           <h2 className="endorsed-title text-center mb-5">
-            Endorsed by engineers. Trusted by CTOs<span className="dot">.</span>
+            Our Experience Reaches Global Brands
           </h2>
 
-          <div className="logos-row d-flex flex-wrap justify-content-center align-items-start gap-5">
+          <div className="logos-row d-flex flex-wrap justify-content-center align-items-start gap-5 desktop-logos">
             <div className="logo-item">
               <img className="logo-svg salesforce-logo" src={goodrich} alt="goodrich" />
             </div>
@@ -83,6 +81,54 @@ export default function HeroSection() {
 
             <div className="logo-item">
               <img className="logo-svg salesforce-logo" src={vmc} alt="VMC" />
+            </div>
+          </div>
+
+          <div className="logos-marquee-container">
+            <div className="logos-marquee-track">
+              <div className="logo-item">
+                <img className="logo-svg salesforce-logo" src={goodrich} alt="goodrich" />
+              </div>
+              <div className="logo-item">
+                <img className="logo-svg salesforce-logo" src={ccl} alt="CCL" />
+              </div>
+              <div className="logo-item">
+                <img className="logo-svg salesforce-logo" src={tataPlayFiber} alt="Tata Play Fiber" />
+              </div>
+              <div className="logo-item">
+                <img className="logo-svg salesforce-logo" src={winesofnz} alt="Wines Of NZ" />
+              </div>
+              <div className="logo-item">
+                <img className="logo-svg salesforce-logo" src={marriott} alt="Marriott" />
+              </div>
+              <div className="logo-item">
+                <img className="logo-svg salesforce-logo" src={tap1ce} alt="Tap1ce" />
+              </div>
+              <div className="logo-item">
+                <img className="logo-svg salesforce-logo" src={vmc} alt="VMC" />
+              </div>
+
+              <div className="logo-item">
+                <img className="logo-svg salesforce-logo" src={goodrich} alt="goodrich" />
+              </div>
+              <div className="logo-item">
+                <img className="logo-svg salesforce-logo" src={ccl} alt="CCL" />
+              </div>
+              <div className="logo-item">
+                <img className="logo-svg salesforce-logo" src={tataPlayFiber} alt="Tata Play Fiber" />
+              </div>
+              <div className="logo-item">
+                <img className="logo-svg salesforce-logo" src={winesofnz} alt="Wines Of NZ" />
+              </div>
+              <div className="logo-item">
+                <img className="logo-svg salesforce-logo" src={marriott} alt="Marriott" />
+              </div>
+              <div className="logo-item">
+                <img className="logo-svg salesforce-logo" src={tap1ce} alt="Tap1ce" />
+              </div>
+              <div className="logo-item">
+                <img className="logo-svg salesforce-logo" src={vmc} alt="VMC" />
+              </div>
             </div>
           </div>
 

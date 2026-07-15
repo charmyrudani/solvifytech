@@ -1,14 +1,10 @@
 .tech-marquee-section {
   background-color: var(--color-bg-light);
-  padding: 100px 0;
+  padding-top: 50px;
   position: relative;
   z-index: 4;
   overflow: hidden;
   border-bottom: 1px solid var(--color-border-light);
-}
-
-.tech-marquee-header {
-  /* max-width: 800px; */
 }
 
 .tech-marquee-title {
@@ -132,6 +128,7 @@
 @media (max-width: 768px) {
   .tech-marquee-section {
     padding: 60px 0;
+    /* padding-top: 0 !important; */
   }
   
   .tech-marquee-title {

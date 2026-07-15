@@ -8,19 +8,26 @@ export default function HeroProjectBanner() {
       <div className="container hero-banner-container">
         <div className="hb-left">
           <h2 className="hb-heading">
-            Want to accelerate software<br />
-            development at your company?<br />
-            <span className="text-orange">See how we can help.</span>
+            Have a Product Idea or Business Challenge?<br />
+            <span className="banner-subtitle">Let’s explore how the right combination of software, AI and automation can move your business forward.</span>
           </h2>
-          <Link to={`${Paths.contactUs}`} className="hb-cta-btn">Schedule a Call</Link>
+          <div className="hb-btn-group mt-5">
+            <Link to={Paths.contactUs} className="hb-cta-btn">
+              Book a Free Discovery Call
+            </Link>
+
+            <a href="mailto:hello@solvifytech.in" className="hb-email-btn">
+              Email Us at hello@solvifytech.in
+            </a>
+          </div>
         </div>
-        
+
         <div className="hb-right">
           <div className="hb-image-wrapper">
-             <img 
-               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
-               alt="Team collaborating on software development" 
-             />
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+              alt="Team collaborating on software development"
+            />
           </div>
         </div>
       </div>

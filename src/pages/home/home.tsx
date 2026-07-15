@@ -6,6 +6,7 @@ import Insights from "./insights/insights"
 import Team from "./team-members/team"
 import ProjectProcess from "./project-process/project-process"
 import HeroProjectBanner from "./hero-project-banner/hero-project-banner"
+import WhyChooseUs from "./why-choose-us/why-choose-us"
 
 export default function Home() {
     return (
@@ -14,6 +15,7 @@ export default function Home() {
             <TechStack />
             <TechMarquee />
             <TestimonialsSection />
+            <WhyChooseUs />
             <ProjectProcess/>
             <Team/>
             <Insights />

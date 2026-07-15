@@ -209,6 +209,7 @@
 }
 .phone-input input {
   flex: 1;
+  min-width: 0;
 }
 
 .textarea-wrapper textarea {
@@ -250,7 +251,6 @@
   opacity: 0.9;
 }
 
-/* Next Steps Section */
 .next-steps-container {
   margin-bottom: 80px;
   padding: 0 20px;
@@ -306,11 +306,7 @@
   margin: 0;
 }
 
-/* FAQ Section */
 .faq-container {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* gap: 40px; */
   padding: 0 20px;
 }
 
@@ -392,4 +388,26 @@
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-5px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 20px 16px;
+  }
+  .contact-left, .contact-right {
+    padding: 24px 16px;
+  }
+  .contact-heading h1 {
+    font-size: 26px;
+  }
+  .contact-container {
+    border-radius: 12px;
+  }
+  .faq-left h2 {
+    font-size: 26px;
+  }
+  .next-steps-container h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
 }

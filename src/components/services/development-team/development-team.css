@@ -1,12 +1,9 @@
-/* ── Section ── */
 .dt-section {
-  padding: 90px;
+  padding: 90px 24px;
   background: #fff;
 }
 
-/* ── Header ── */
 .dt-header {
-  /* max-width: 740px; */
   margin-bottom: 52px;
 }
 
@@ -22,7 +19,6 @@
 
 .dt-title {
   font-size: 44px;
-  /* font-weight: 600; */
   line-height: 1.1;
   letter-spacing: -1px;
   color: #0f172a;
@@ -34,20 +30,28 @@
   line-height: 1.7;
   color: #374151;
   margin: 0;
-  /* max-width: 720px; */
 }
 
 @media (max-width: 767.98px) {
-  .dt-title {
-    font-size: 34px;
+  .dt-section {
+    padding: 48px 15px;
   }
 
-  .dt-section {
-    padding: 60px 0;
+  .dt-title {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .dt-description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .dt-header {
+    margin-bottom: 32px;
   }
 }
 
-/* ── Grid ── */
 .dt-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -66,7 +70,6 @@
   }
 }
 
-/* ── Card ── */
 .dt-card {
   background: #f9fafb;
   border: 1px solid #e5e7eb;
@@ -83,7 +86,6 @@
   transform: translateY(-1px);
 }
 
-/* ── Card Top ── */
 .dt-card-top {
   display: flex;
   align-items: center;
@@ -134,7 +136,6 @@
   line-height: 1.3;
 }
 
-/* ── Tech Badges ── */
 .dt-tech-list {
   display: flex;
   flex-wrap: wrap;
@@ -163,7 +164,6 @@
   color: #10b981;
 }
 
-/* ── Certifications ── */
 .dt-cert-list {
   list-style: none;
   margin: 0;
@@ -201,7 +201,6 @@
   line-height: 1.5;
 }
 
-/* ── CTA Card ── */
 .dt-cta-card {
   background: #e6f7f0;
   border-radius: 14px;

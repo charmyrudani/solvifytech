@@ -7,6 +7,7 @@
   color: var(--color-text-dark);
   background: var(--color-white);
   line-height: 1.55;
+  overflow-x: hidden;
 }
 
 .cs-page h1,
@@ -150,7 +151,7 @@
 }
 
 .tap1ce-summary-title {
-  font-size: 4rem;
+  font-size: clamp(2rem, 5vw, 4rem);
   font-weight: 600;
   color: var(--color-text-muted);
 }
@@ -158,8 +159,8 @@
 .tap1ce-summary-desc {
   color: var(--color-text-muted);
   max-width: 620px;
-  font-size: 2rem;
-  line-height: 36px;
+  font-size: clamp(1.15rem, 3.5vw, 2rem);
+  line-height: 1.5;
 }
 
 .cs-meta-bar {
@@ -288,6 +289,7 @@
 }
 
 .cs-solution-container {
+  padding: 0px 12px;
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
@@ -1374,6 +1376,7 @@
   }
 
   .cs-challenge-grid {
+    padding: 0px 12px;
     flex-direction: column;
   }
 
@@ -1462,5 +1465,24 @@
   .cs-metric-card {
     border-right: none;
     border-bottom: 1px solid var(--color-border-hover);
+  }
+}
+
+@media (max-width: 768px) {
+  .cs-check-list li {
+    flex: 0 0 100% !important;
+  }
+  
+  .cs-built-card ul {
+    grid-template-columns: 1fr !important;
+    column-gap: 0 !important;
+    row-gap: 12px !important;
+  }
+
+  .cs-outcome{
+    /* padding: 0 25px 25px 0; */
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 0;
   }
 }

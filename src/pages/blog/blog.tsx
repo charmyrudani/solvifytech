@@ -23,11 +23,11 @@ export default function Blog() {
                 </ol>
             </nav>
 
-            <div style={{ maxWidth: '1200px', margin: '0 auto 60px' }}>
-                <h1 style={{ fontSize: '48px', fontWeight: 700, color: '#1e293b', margin: '0 0 12px', lineHeight: 1.15 }}>
+            <div className="blog-header-section">
+                <h1 className="blog-page-title">
                     Our Blog &amp; Insights
                 </h1>
-                <p style={{ fontSize: '18px', color: '#64748b', margin: 0, fontWeight: 400 }}>
+                <p className="blog-page-subtitle">
                     Ideas, perspectives, and deep dives from the Solvify Tech team.
                 </p>
             </div>

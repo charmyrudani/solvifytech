@@ -31,8 +31,24 @@
   display: inline-flex;
   align-items: center;
   transition: background-color 0.2s ease;
+  text-decoration: none;
 }
 
 .project-banner-btn:hover {
   background-color: #059669;
+}
+
+@media (max-width: 768px) {
+  .project-banner-section {
+    padding: 48px 15px;
+  }
+  .project-banner-title {
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+  .project-banner-btn {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
 }

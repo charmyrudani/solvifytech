@@ -328,6 +328,24 @@
         padding: 20px;
     }
     
+    .bd-page-wrapper {
+        padding: 20px 16px 60px;
+    }
+
+    .bd-breadcrumb-nav {
+        margin-bottom: 20px;
+    }
+
+    .bd-title {
+        font-size: 1.85rem;
+        margin-bottom: 16px;
+    }
+
+    .bd-excerpt {
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+    }
+
     .bd-related-grid {
         grid-template-columns: 1fr;
     }

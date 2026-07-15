@@ -44,7 +44,7 @@
 }
 
 .capability-item:not(.active):hover {
-  background-color: #f1f3f5;
+  border: 1px solid rgb(161, 161, 161);
 }
 
 .capability-item .capability-icon {
@@ -174,5 +174,36 @@
 @media (max-width: 991px) {
   .capability-item.active::after {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .capabilities-section {
+    padding: 18px 15px 48px 15px;
+  }
+  .capabilities-header {
+    font-size: 28px;
+    margin-bottom: 24px !important;
+  }
+  .capabilities-desc {
+    font-size: 0.95rem;
+  }
+  .capability-item {
+    padding: 10px 14px;
+    gap: 8px;
+  }
+  .capability-item .capability-icon {
+    font-size: 1.15rem;
+    min-width: 1.15rem;
+  }
+  .capability-item .capability-title {
+    font-size: 0.95rem;
+  }
+  .tools-grid {
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 12px;
+  }
+  .tool-card {
+    padding: 8px;
   }
 }

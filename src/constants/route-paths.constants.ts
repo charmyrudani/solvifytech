@@ -4,7 +4,7 @@ export const Paths = {
   services: "services",
   technologies: "technologies",
   contactUs: "contact-us",
-  blog: "blog",
+  blog: "insights",
   ourWork: "our-work",
 
   // Top Services

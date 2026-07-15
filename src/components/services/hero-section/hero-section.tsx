@@ -10,6 +10,7 @@ import cursor from '/images/tool-tech/cursor.svg'
 import cody from '/images/tool-tech/cody.svg'
 import copilot from '/images/tool-tech/copilot.svg'
 import { GoHome } from 'react-icons/go';
+import { FiCheckCircle } from 'react-icons/fi';
 
 const HeroSection = ({ data }: any) => {
   const hero = data.hero;
@@ -48,7 +49,7 @@ const HeroSection = ({ data }: any) => {
           </nav>
 
           <div className="row g-5 align-items-stretch">
-            <div className="col-12 col-lg-8 d-flex flex-column justify-content-between">
+            <div className="hs-hero col-12 col-lg-8 d-flex flex-column justify-content-between">
               <div className="services-hero-text">
                 <span className="services-hero-tag text-uppercase fw-bold tracking-wider">
                   {hero.tagline}
@@ -111,9 +112,7 @@ const HeroSection = ({ data }: any) => {
 
                 {formSubmitted ? (
                   <div className="alert alert-success text-center py-4 my-3" role="alert">
-                    <svg className="success-checkmark mb-3" viewBox="0 0 24 24" width="48" height="48" fill="currentColor">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                    </svg>
+                    <FiCheckCircle className="success-checkmark mb-3" size={48} />
                     <h4 className="fw-bold">Request Received!</h4>
                     <p className="mb-0 text-muted">
                       Thank you, <strong>{formData.fullName}</strong>. Our expert team will reach out to you shortly at <strong>{formData.email}</strong>.

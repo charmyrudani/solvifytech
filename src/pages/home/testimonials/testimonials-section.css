@@ -1,7 +1,6 @@
-/* Testimonials Section Stylesheet */
-
 .testimonials-section {
-  padding: 100px 0;
+  padding-top: 60px;
+  padding-bottom: 30px;
   overflow: hidden;
   background-color: var(--color-white);
   z-index: 5;
@@ -15,7 +14,6 @@
   align-items: center;
 }
 
-/* Left Column: Team image card (absolute on desktop) */
 .testimonials-team-card {
   position: absolute;
   left: 0px;
@@ -45,19 +43,12 @@
 }
 
 .team-photo {
-  /* width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block; */
-
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center 20%;
-  /* display: block; */
 }
 
-/* Right Column: Content area (padding to push text right of the team card) */
 .testimonials-content-col {
   padding-left: calc(40% + 48px);
   margin-top: 40px;
@@ -119,7 +110,6 @@
   transform: translateX(4px);
 }
 
-/* Swiper slider container (negative margin shifts slider left to overlay the team card) */
 .testimonials-slider-container {
   margin-left: calc(-47% - 48px);
   width: calc(100% + 28% + 48px);
@@ -130,16 +120,13 @@
 
 .testimonials-swiper {
   overflow: visible !important;
-  /* Premium overflow effect */
   width: 100%;
 }
 
 .testimonial-slide-item {
   height: auto;
-  /* Required for flex justify-content-between h-100 to work */
 }
 
-/* Testimonial Cards */
 .testimonial-card {
   background-color: var(--color-white);
   border: 1px solid rgba(0, 0, 0, 0.06);
@@ -159,7 +146,6 @@
   border-color: rgba(0, 0, 0, 0.12);
 }
 
-/* Card Header elements */
 .brand-logo-wrapper {
   height: 36px;
   display: flex;
@@ -186,7 +172,6 @@
   color: var(--color-primary);
 }
 
-/* Card Quote Elements */
 .card-quote-wrapper {
   flex-grow: 1;
 }
@@ -211,7 +196,6 @@
   margin-top: 4px;
 }
 
-/* Card Author Elements */
 .card-author-wrapper {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   padding-top: 20px;
@@ -229,11 +213,9 @@
   font-weight: 500;
 }
 
-/* Custom Navigation arrows */
 .testimonials-nav-controls {
   display: flex;
   gap: 16px;
-  /* margin-top: 24px; */
   margin-left: 209px;
   z-index: 30;
 }
@@ -263,7 +245,6 @@
   transform: scale(1.05);
 }
 
-/* Disabled state of nav arrows */
 .nav-arrow.swiper-button-disabled {
   border-color: #e2e8f0;
   color: #cbd5e1;
@@ -277,7 +258,6 @@
   transform: none;
 }
 
-/* Scroll Entrance Animations */
 .animate-slide-up {
   opacity: 0;
   transform: translateY(30px);
@@ -289,7 +269,6 @@
   transform: translateY(0);
 }
 
-/* Responsiveness adjustments */
 @media (max-width: 1399px) {
   .testimonial-card {
     min-height: 430px;
@@ -312,6 +291,12 @@
     padding: 60px 16px;
   }
 
+  .testimonials-main-layout {
+    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
   .testimonials-team-card {
     position: relative;
     left: 0;
@@ -332,7 +317,6 @@
 
   .testimonials-swiper {
     overflow: hidden !important;
-    /* Prevent sliding outside container boundaries on mobile */
   }
 
   .testimonial-card {
@@ -342,6 +326,7 @@
   .testimonials-nav-controls {
     justify-content: center;
     margin-top: 16px;
+    margin-left: 0;
   }
 }
 

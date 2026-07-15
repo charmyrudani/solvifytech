@@ -53,19 +53,30 @@ export default function Capabilities({ data }: any) {
           <div className="col-lg-5 col-md-5">
             <div className="capabilities-list d-flex flex-column gap-2" ref={listRef}>
               {data.capabilities.map((cap: any, index: number) => (
-                <div
-                  key={index}
-                  className={`capability-item ${index === activeIndex ? 'active' : ''}`}
-                  onClick={() => setActiveIndex(index)}
-                >
-                  <FaRegCheckCircle className="capability-icon" />
-                  <span className="capability-title">{cap.title}</span>
+                <div key={index} className="capability-item-wrapper">
+                  <div
+                    className={`capability-item ${index === activeIndex ? 'active' : ''}`}
+                    onClick={() => setActiveIndex(index)}
+                  >
+                    <FaRegCheckCircle className="capability-icon" />
+                    <span className="capability-title">{cap.title}</span>
+                  </div>
+                  {index === activeIndex && (
+                    <div className="capability-details p-3 d-md-none mt-2 mb-2">
+                      <p className="capability-description mb-3">{cap.description}</p>
+                      <div className="tools-grid">
+                        {cap.tools.map((tool: any, idx: number) => (
+                          <ToolCard key={`${cap.title}-${tool.name}-${idx}`} tool={tool} />
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="col-lg-7 col-md-7 d-flex flex-column">
+          <div className="col-lg-7 col-md-7 d-none d-md-flex flex-column">
             <div 
               className="capability-details p-4" 
               ref={detailsRef}

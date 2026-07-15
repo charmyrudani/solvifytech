@@ -302,3 +302,79 @@
 .engineer-info {
   flex: 1;
 }
+
+@media (max-width: 768px) {
+  .services-hero-container {
+    min-height: auto;
+    padding: 32px 15px !important;
+    /* padding-bottom: 40px !important; */
+  }
+  .services-breadcrumbs {
+    margin-bottom: 20px !important;
+  }
+  .services-hero-title {
+    font-size: 1.85rem;
+    line-height: 1.2;
+    margin-top: 8px !important;
+    margin-bottom: 12px !important;
+  }
+  .services-hero-desc {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px !important;
+  }
+  .engineer-showcase-wrapper {
+    max-width: 100%;
+  }
+  .engineer-card {
+    padding: 16px 20px;
+    gap: 12px;
+  }
+  .engineer-avatar {
+    width: 52px;
+    height: 52px;
+  }
+  .engineer-role {
+    font-size: 0.9rem;
+  }
+  .engineer-name {
+    font-size: 0.75rem;
+  }
+  .engineer-exp {
+    font-size: 0.8rem;
+  }
+  .engineer-client {
+    gap: 6px;
+  }
+  .client-logo {
+    width: 70px;
+    height: 25px;
+  }
+  .ai-tools-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* margin-top: 15px; */
+    align-items: center;
+    padding-top: 15px;
+  }
+  .ai-tools-title {
+    margin-bottom: 16px !important;
+    font-size: 20px;
+  }
+  .ai-tools-row {
+    gap: 16px !important;
+  }
+  .ai-tool-logo {
+    height: 50px;
+    width: auto;
+  }
+  .contact-form-card {
+    padding: 24px 20px !important;
+  }
+  .form-title {
+    font-size: 1.35rem;
+    margin-bottom: 16px !important;
+  }
+}

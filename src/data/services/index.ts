@@ -32,7 +32,7 @@ export const SERVICES = {
   "erp-development": erpDevelopment,
   "web-development": webDevelopment,
   "mobile-app-development": mobileAppDevelopment,
-  "ui-ux-development": uiUxDesign,
+  "ui-ux-design": uiUxDesign,
   "cloud-devops": cloudDevops,
   "ai-agents": aiAgents,
   "chatbots": chatbots,

@@ -1,5 +1,6 @@
 import "./insights.css";
 import { Link } from "react-router-dom";
+import { FiArrowLeft, FiArrowRight, FiClock } from "react-icons/fi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
@@ -18,16 +19,10 @@ export default function Insights() {
           <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
             <div className="custom-nav">
               <button className="prev" aria-label="Previous slide">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="19" y1="12" x2="5" y2="12"></line>
-                  <polyline points="12 19 5 12 12 5"></polyline>
-                </svg>
+                <FiArrowLeft size={20} />
               </button>
               <button className="next" aria-label="Next slide">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
+                <FiArrowRight size={20} />
               </button>
             </div>
 
@@ -48,10 +43,7 @@ export default function Insights() {
               }}
             >
               See all
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
+              <FiArrowRight size={15} />
             </Link>
           </div>
         </div>
@@ -93,10 +85,7 @@ export default function Insights() {
                     <div className="author-time">
                       <p className="author">Solvify Tech</p>
                       <div className="time">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="clock-icon">
-                          <circle cx="12" cy="12" r="10"></circle>
-                          <polyline points="12 6 12 12 16 14"></polyline>
-                        </svg>
+                        <FiClock className="clock-icon" size={14} />
                         <span>{post.date}</span>
                       </div>
                     </div>

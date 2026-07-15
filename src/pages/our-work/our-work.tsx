@@ -55,9 +55,9 @@ export default function OurWork() {
       <div key={index} className="client-card">
         {card.hasLink && (
           <div className="card-top-link">
-            <a href={card.link} className="card-link">
+            <Link to={card.link} className="card-link">
               See case study <FiArrowRight size={14} />
-            </a>
+            </Link>
           </div>
         )}
         <div className={logoContainerClass}>
@@ -88,7 +88,6 @@ export default function OurWork() {
         <div className="hero-text">
           <div className="subtitle-top">Our Work</div>
           <h1 className="hero-title">
-            {/* Over 10 Years of<br />Over Delivering<span className="dot">.</span> */}
             Building Digital Products That Drive Business Growth<span className="dot">.</span>
           </h1>
           <p className="hero-description">
@@ -102,7 +101,6 @@ export default function OurWork() {
               <img src={work1} alt="CCL" />
               <div className="ow-hero-overlay">
                 <div className="hero-logo">CCL</div>
-                {/* <div className="case-study-link">Case study <FiArrowRight /></div> */}
               </div>
             </div>
             <div className="hero-image-wrapper" style={{ height: '220px' }}>
@@ -117,7 +115,6 @@ export default function OurWork() {
               <img src={work3} alt="Tata Play Fiber" />
               <div className="ow-hero-overlay" style={{ background: 'linear-gradient(to bottom, transparent, rgba(0,0,0,0.9))' }}>
                 <div className="hero-logo" style={{ fontFamily: 'serif', letterSpacing: '3px', fontSize: '26px', textTransform: 'uppercase' }}>TATA PLAY FIBER</div>
-                {/* <div className="case-study-link">Case study <FiArrowRight /></div> */}
               </div>
             </div>
           </div>

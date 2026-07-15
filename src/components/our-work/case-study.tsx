@@ -400,11 +400,11 @@ function CaseStudy({ data }: { data: CaseStudyData }) {
 
       {/* OUTCOME */}
       <section className="cs-outcome">
-        <div className="cs-outcome-inner d-flex">
-          <div>
-            <img src={outcomeImg} alt="Outcome" height={422}/>
+        <div className="cs-outcome-inner">
+          <div className="cs-outcome-media">
+            <img src={outcomeImg} alt="Outcome" className="cs-outcome-img" />
           </div>
-          <div className="cs-outcome-content" style={{ gridColumn: "1 / -1" }}>
+          <div className="cs-outcome-content">
             <span className="cs-outcome-eyebrow">Results</span>
             <h2 className="cs-outcome-title">
               The outcome<span className="dot">.</span>
@@ -471,7 +471,7 @@ function CaseStudy({ data }: { data: CaseStudyData }) {
             From SaaS platforms and client portals to AI-powered applications,
             Solvifytech helps businesses turn ideas into scalable digital products.
           </p>
-          <a className="cs-cta-button" href={`/${Paths.contactUs}`}>Let's build together</a>
+          <Link className="cs-cta-button" to={`/${Paths.contactUs}`}>Let's build together</Link>
         </div>
       </section>
 
@@ -479,7 +479,6 @@ function CaseStudy({ data }: { data: CaseStudyData }) {
   );
 }
 
-/* ─── Page wrapper — useParams → lookup → pass data as prop ── */
 export default function CaseStudyPage() {
   const { casestudyId } = useParams<{ casestudyId: string }>();
   const slug = casestudyId ?? "tap1ce";
