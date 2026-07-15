@@ -10,6 +10,8 @@ import Blog from './pages/blog/blog.tsx';
 import BlogDetail from './pages/blog/blog-detail/blog-detail.tsx';
 import OurWork from './pages/our-work/our-work.tsx';
 import CaseStudyPage from './components/our-work/case-study.tsx';
+import PrivacyPolicy from './pages/privacy-policy/privacy-policy.tsx';
+import TermsConditions from './pages/terms-conditions/terms-conditions.tsx';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
           <Route path={`${Paths.blog}/:blogId`} element={<BlogDetail />} />
           <Route path={`${Paths.ourWork}`} element={<OurWork />} />
           <Route path={`${Paths.ourWork}/:casestudyId`} element={<CaseStudyPage />} />
+          <Route path={Paths.privacyPolicy} element={<PrivacyPolicy />} />
+          <Route path={Paths.termsConditions} element={<TermsConditions />} />
         </Route>
       </Routes>
     </Router>

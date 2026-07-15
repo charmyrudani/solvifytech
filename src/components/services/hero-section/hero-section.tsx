@@ -12,10 +12,11 @@ import cody from '/images/tool-tech/cody.svg'
 import copilot from '/images/tool-tech/copilot.svg'
 import { GoHome } from 'react-icons/go';
 import { FiCheckCircle } from 'react-icons/fi';
+import { developmentTeam } from '../../../data/development-team/development-team';
 
 const HeroSection = ({ data }: any) => {
   const hero = data.hero;
-  const engineers = data.developmentTeam.engineers;
+  const engineers = developmentTeam.engineers;
 
   const [formData, setFormData] = useState({ fullName: "", email: "", needs: "", });
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -109,7 +110,7 @@ const HeroSection = ({ data }: any) => {
                           </div>
                           <div className="engineer-client">
                             <span className="client-label"> Previous Project </span>
-                            <img src={e.company} alt="company" className="client-logo" />
+                            <img src={e.project} alt="project" className="client-logo" />
                           </div>
                         </div>
                       </SwiperSlide>

@@ -1,0 +1,205 @@
+terms & conditions
+----------------------------
+
+Terms & Conditions
+Effective Date: July 15, 2026
+
+These Terms & Conditions govern all services provided by Solvify Tech.
+
+By engaging our services, making payments, signing quotations, approving proposals, or using our website, you agree to these Terms.
+
+1. Services
+Solvify Tech provides professional services including but not limited to:
+
+Website Development
+
+Shopify Development
+
+ERP Development
+
+CRM Development
+
+Mobile App Development
+
+UI/UX Design
+
+Artificial Intelligence Solutions
+
+SaaS Development
+
+API Integration
+
+Cloud Services
+
+SEO
+
+Digital Marketing
+
+Technical Consulting
+
+Maintenance & Support
+
+2. Project Acceptance
+A project shall be considered confirmed only after:
+
+Proposal approval
+
+Quotation acceptance
+
+Initial payment received
+
+Written confirmation
+
+3. Client Responsibilities
+The client agrees to provide:
+
+Complete project requirements
+
+Required content
+
+Images
+
+Logos
+
+Domain access
+
+Hosting access
+
+Third-party credentials
+
+Timely approvals
+
+Delays in providing information may result in revised delivery timelines.
+
+4. Project Timeline
+Estimated timelines are based on timely client responses.
+
+Any delay from the client's side automatically extends the delivery schedule.
+
+5. Change Requests
+Any work outside the approved project scope shall be considered additional work and may incur additional charges.
+
+Major changes after design or development approval may require a revised quotation.
+
+6. Payment Terms
+Payments shall be made according to the agreed milestone schedule.
+
+Invoices must be paid within the agreed due date.
+
+Late payments may result in:
+
+Project suspension
+
+Delay in delivery
+
+Suspension of maintenance
+
+Additional charges
+
+7. No Refund Policy
+ALL PAYMENTS MADE TO SOLVIFY TECH ARE FINAL AND NON-REFUNDABLE.
+
+No refunds shall be provided under any circumstances, including but not limited to:
+
+Change of business plans
+
+Project cancellation by the client
+
+Delay caused by the client
+
+Partial project completion
+
+Client dissatisfaction after approved milestones
+
+Change of technology preference
+
+Business closure
+
+Domain or hosting issues
+
+Third-party service failures
+
+Work begins immediately after project confirmation, involving allocation of technical resources, planning, design, development, and infrastructure costs. Therefore, all payments are strictly non-refundable.
+
+8. Intellectual Property
+Ownership of the final project shall transfer to the client only after full payment has been received.
+
+Until then:
+
+Source code remains the property of Solvify Tech.
+
+Design files remain our property.
+
+Internal frameworks remain proprietary.
+
+Reusable libraries remain our intellectual property.
+
+9. Confidentiality
+Both parties agree to maintain confidentiality regarding business information, technical documentation, trade secrets, and project materials.
+
+10. Third-Party Services
+We are not responsible for downtime, failures, pricing changes, or policy changes of third-party providers including hosting companies, payment gateways, domain registrars, APIs, Shopify, Google, Meta, AWS, or similar services.
+
+11. Warranty
+Unless otherwise agreed in writing:
+
+We provide a 30-day bug-fix warranty for software defects related to the delivered scope.
+
+New feature requests are not included under warranty.
+
+Warranty does not cover issues arising from third-party changes, unauthorized modifications, server misconfiguration, or misuse.
+
+12. Maintenance
+Maintenance contracts are separate from project development.
+
+Support beyond the agreed maintenance period may incur additional charges.
+
+13. SEO & Marketing Disclaimer
+Search engine rankings, organic traffic, lead generation, conversion rates, and marketing performance cannot be guaranteed due to factors outside our control, including search engine algorithms and market competition.
+
+14. Limitation of Liability
+Solvify Tech shall not be liable for any indirect, incidental, consequential, special, punitive, or business losses, including loss of profits, revenue, goodwill, or data arising from the use of our services.
+
+Our total liability shall not exceed the amount paid by the client for the specific project giving rise to the claim.
+
+15. Project Abandonment
+If a client becomes unresponsive for more than 45 consecutive days, the project may be considered abandoned.
+
+Any reactivation may require additional charges and revised timelines.
+
+16. Account Suspension
+We reserve the right to suspend services for:
+
+Non-payment
+
+Abuse
+
+Illegal activities
+
+Violation of these Terms
+
+Security concerns
+
+17. Force Majeure
+Neither party shall be liable for delays caused by events beyond reasonable control, including natural disasters, internet outages, governmental actions, pandemics, war, cyberattacks, or labor disputes.
+
+18. Governing Law
+These Terms shall be governed by the laws of India.
+
+19. Jurisdiction
+Any dispute arising out of or relating to these Terms or our services shall be subject to the exclusive jurisdiction of the competent courts located in Surat, Gujarat, India.
+
+Both parties expressly agree to submit to the exclusive jurisdiction of the courts at Surat.
+
+20. Severability
+If any provision of these Terms is held invalid or unenforceable, the remaining provisions shall continue in full force and effect.
+
+21. Entire Agreement
+These Terms, together with any signed proposal, quotation, statement of work, or service agreement, constitute the complete agreement between the parties.
+
+22. Contact Information
+Solvify Tech
+
+Email: hello@solvifytech.in
+
+Website: https://solvifytech.in

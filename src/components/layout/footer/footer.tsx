@@ -18,25 +18,25 @@ const footerData: FooterLinkSection[] = [
   {
     title: 'Services & Enterprise',
     links: [
-      { name: 'AI Development', url: `/${Paths.services}/${Paths.aiDevelopment}` },
-      { name: 'AI Automation', url: `/${Paths.technologies}/${Paths.aiAutomation}` },
       { name: 'ERP Development', url: `/${Paths.services}/${Paths.erpDevelopment}` },
       { name: 'Web Development', url: `/${Paths.services}/${Paths.webDevelopment}` },
       { name: 'Mobile App Development', url: `/${Paths.services}/${Paths.mobileAppDevelopment}` },
       { name: 'Shopify Development', url: `/${Paths.services}/${Paths.shopifyDevelopment}` },
       { name: 'UI/UX Design', url: `/${Paths.services}/${Paths.uiUxDesign}` },
       { name: 'Cloud and DevOps', url: `/${Paths.services}/${Paths.cloudDevOps}` },
+      { name: 'SaaS Product Development', url: `/${Paths.services}/${Paths.saasDevelopment}` },
     ]
   },
   {
     title: 'Solutions',
     links: [
-      { name: 'SaaS Product Development', url: `/${Paths.services}/${Paths.saasDevelopment}` },
-      { name: 'Business Process Automation', url: `/${Paths.services}/${Paths.workflowAutomation}` },
-      { name: 'CRM and ERP Development', url: `/${Paths.services}/${Paths.crmSystems}` },
-      { name: 'E-commerce Solutions', url: `/${Paths.services}/${Paths.shopifyDevelopment}` },
-      { name: 'Healthcare Software', url: `/${Paths.ourWork}/${Paths.doccure}` },
-      { name: 'Dedicated Development Teams', url: `/${Paths.ourWork}/${Paths.hireGlobalTalent}` },
+      { name: 'AI Automation', url: `/${Paths.technologies}/${Paths.aiAutomation}` },
+      { name: 'Next JS Development', url: `/${Paths.technologies}/${Paths.nextjs}` },
+      { name: 'Redis Development', url: `/${Paths.technologies}/${Paths.redis}` },
+      { name: 'MongoDB Development', url: `/${Paths.technologies}/${Paths.mongodb}` },
+      { name: 'Strapi Development', url: `/${Paths.technologies}/${Paths.strapi}` },
+      { name: 'Wordpress Development', url: `/${Paths.technologies}/${Paths.wordpress}` },
+      { name: 'AI Development', url: `/${Paths.technologies}/${Paths.ai}` },
     ]
   },
   {
@@ -114,8 +114,8 @@ const Footer: React.FC = () => {
                 <Link to={`/${Paths.contactUs}`} target="_blank" rel="noopener noreferrer" className="footer-cta-btn">
                   Book a Discovery Call
                 </Link>
-                <a href="mailto:support.solvifytech@gmail.com" className="footer-phone-number">
-                  support.solvifytech@gmail.com
+                <a href="mailto:hello@solvifytech.in" className="footer-phone-number">
+                  hello@solvifytech.in
                 </a>
               </div>
               <p className="footer-address mt-4">
@@ -171,8 +171,8 @@ const Footer: React.FC = () => {
             <span className="copyright-text">© SolvifyTech 2026. All rights reserved.</span>
             <span className="legal-divider d-none d-md-inline">|</span>
             <div className="footer-legal-links d-flex gap-3">
-              <Link to="#" rel="noopener noreferrer">Privacy Policy</Link>
-              <Link to="#" rel="noopener noreferrer">Terms of Service</Link>
+              <Link to={`/${Paths.privacyPolicy}`}>Privacy Policy</Link>
+              <Link to={`/${Paths.termsConditions}`}>Terms &amp; Conditions</Link>
               <Link to="#" rel="noopener noreferrer">Do Not Sell My Info</Link>
             </div>
           </div>

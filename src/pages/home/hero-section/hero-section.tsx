@@ -58,7 +58,7 @@ export default function HeroSection() {
             Our Experience Reaches Global Brands
           </h2>
 
-          <div className="logos-row d-flex flex-wrap justify-content-center align-items-start gap-5 desktop-logos">
+          <div className="logos-row d-flex flex-wrap justify-content-center align-items-start gap-4 desktop-logos">
             <div className="logo-item">
               <img className="logo-svg salesforce-logo" src={goodrich} alt="goodrich" />
             </div>
@@ -83,6 +83,8 @@ export default function HeroSection() {
               <img className="logo-svg salesforce-logo" src={vmc} alt="VMC" />
             </div>
           </div>
+
+          <p className="text-center mt-2 brand-line">Includes direct and indirect service relationships, through agencies, vendor networks, and strategic collaborations.</p>
 
           <div className="logos-marquee-container">
             <div className="logos-marquee-track">

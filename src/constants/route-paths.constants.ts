@@ -6,6 +6,8 @@ export const Paths = {
   contactUs: "contact-us",
   blog: "insights",
   ourWork: "our-work",
+  privacyPolicy: "privacy-policy",
+  termsConditions: "terms-conditions",
 
   // Top Services
   aiDevelopment: "ai-development",

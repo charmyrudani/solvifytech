@@ -126,7 +126,11 @@
   display: block;
 }
 
-/* Endorsed Logos Section */
+.brand-line{
+  color: gray;
+  font-size: 13px;
+}
+
 .endorsed-section {
   z-index: 4;
 }
@@ -383,8 +387,4 @@
   100% {
     transform: translateX(-50%);
   }
-}
-
-.support-text{
-  
 }

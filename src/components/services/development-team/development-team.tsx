@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import "./development-team.css";
+import { Paths } from "../../../constants/route-paths.constants";
+import { developmentTeam } from "../../../data/development-team/development-team";
 
 export default function DevelopmentTeam({ data, serviceName }: any) {
-  
-  if (!data) return null;
 
   return (
     <section className="dt-section">
@@ -14,7 +15,7 @@ export default function DevelopmentTeam({ data, serviceName }: any) {
         </div>
 
         <div className="dt-grid">
-          {data.engineers?.map((engineer: any, index: number) => (
+          {developmentTeam.engineers?.map((engineer: any, index: number) => (
             <div className="dt-card" key={index}>
               <div className="dt-card-top">
                 <div className="dt-avatar-wrap">
@@ -53,15 +54,15 @@ export default function DevelopmentTeam({ data, serviceName }: any) {
               )}
             </div>
           ))}
-          
+
           <div className="dt-cta-card">
             <div className="dt-cta-avatars">
-              {data.engineers?.slice(0, 5).map((eng: any, idx: number) => (
+              {/* {data.engineers?.slice(0, 5).map((eng: any, idx: number) => (
                 <img key={idx} src={eng.image} alt={eng.name} className="dt-cta-avatar" />
-              ))}
+              ))} */}
             </div>
             <h3 className="dt-cta-text">Onboard a {serviceName} team in weeks, not months.</h3>
-            <button className="dt-cta-btn">Talk to an expert</button>
+            <Link to={`/${Paths.contactUs}`} className="dt-cta-btn">Talk to an expert</Link>
           </div>
         </div>
       </div>
