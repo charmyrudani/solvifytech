@@ -63,11 +63,20 @@ const Navbar: React.FC = () => {
           <nav className="desktop-navbar-nav" aria-label="BairesDev main navigation">
             <ul className="navbar-menu-list">
               {navbarData.map((menu) => {
-                if (menu.path) {
+                const hasDropdown = !!menu.desktop;
+                const pathTarget = menu.key === 'services'
+                  ? `/${Paths.services}`
+                  : menu.key === 'solutions'
+                  ? `/${Paths.technologies}`
+                  : menu.key === 'about-us'
+                  ? `/${Paths.contactUs}`
+                  : menu.path;
+
+                if (!hasDropdown) {
                   return (
                     <li key={menu.key} className="navbar-menu-item" onClick={closeMenu}>
                       <NavLink
-                        to={menu.path}
+                        to={pathTarget || '#'}
                         className={({ isActive }) => `navbar-link-btn flat-link ${isActive ? 'active' : ''}`}
                       >
                         {menu.label}
@@ -83,7 +92,11 @@ const Navbar: React.FC = () => {
                     onMouseEnter={() => handleMouseEnter(menu.key)}
                     onMouseLeave={handleMouseLeave}
                   >
-                    <Link to="#" className={`navbar-link-btn ${activeDropdown === menu.key ? 'active' : ''}`}>
+                    <Link
+                      to={pathTarget || '#'}
+                      className={`navbar-link-btn ${activeDropdown === menu.key ? 'active' : ''}`}
+                      onClick={closeMenu}
+                    >
                       {menu.label}
                       <FaChevronDown className={`chevron-icon ${activeDropdown === menu.key ? 'rotate-180' : ''}`} size={16}
                       />

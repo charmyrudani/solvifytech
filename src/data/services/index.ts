@@ -52,6 +52,8 @@ export const SERVICES = {
   "google-ads": googleAds,
   "social-media-marketing": socialMediaMarketing,
   "email-marketing": emailMarketing,
-  "lead-generation": leadGeneration
+  "lead-generation": leadGeneration,
+  "digital-marketing": socialMediaMarketing,
+  "custom-software-development": erpDevelopment
 
 };

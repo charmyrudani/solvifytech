@@ -1,0 +1,321 @@
+.tlp-page-container {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--color-white);
+  color: var(--color-text-dark);
+  min-height: 100vh;
+}
+
+/* Breadcrumbs Styling */
+.tlp-breadcrumbs-container {
+  background-color: var(--color-bg-light);
+  padding: 16px 32px;
+  padding-top: 42px;
+}
+
+.tlp-breadcrumbs-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.tlp-breadcrumb-link {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.tlp-breadcrumb-link:hover {
+  color: var(--color-primary);
+}
+
+.tlp-breadcrumb-home-icon {
+  font-size: 1.25rem;
+}
+
+.tlp-breadcrumb-separator {
+  color: var(--color-text-gray-light);
+}
+
+.tlp-breadcrumb-current {
+  color: var(--color-text-dark);
+  font-weight: 500;
+}
+
+/* Hero Section */
+.tlp-hero-section {
+  background-color: var(--color-bg-light);
+  padding: 60px 32px;
+}
+
+.tlp-hero-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.tlp-hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tlp-hero-subtitle {
+  color: var(--color-text-gray);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.tlp-hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  color: var(--color-text-dark);
+}
+
+.tlp-highlight-orange {
+  color: var(--color-primary);
+}
+
+.tlp-hero-description {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+.tlp-hero-cta {
+  margin-top: 10px;
+}
+
+.tlp-cta-button-primary {
+  display: inline-block;
+  background-color: var(--color-text-dark);
+  color: var(--color-white);
+  padding: 14px 28px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid var(--color-text-dark);
+}
+
+.tlp-cta-button-primary:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 100, 51, 0.2);
+}
+
+/* Image Graphic shape styling */
+.tlp-hero-image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tlp-custom-shape-container {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 1.5;
+}
+
+.tlp-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5% 25% 5% 25%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border: 4px solid var(--color-white);
+}
+
+.tlp-shape-overlay-bubble {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--color-primary-hover) 0%, var(--color-primary) 100%);
+  opacity: 0.15;
+  z-index: -1;
+}
+
+/* Grid Sections */
+.tlp-grid-section {
+  padding: 80px 32px;
+  background-color: var(--color-white);
+}
+
+.tlp-grid-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.tlp-category-group {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.tlp-category-header {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.tlp-cat-icon {
+  color: var(--color-primary);
+  font-size: 2.2rem;
+  flex-shrink: 0;
+}
+
+/* Card Styling */
+.tlp-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 30px;
+}
+
+.tlp-tech-card {
+  background-color: var(--color-bg-light);
+  border: 1px solid var(--color-border-light);
+  border-radius: 12px;
+  padding: 32px;
+  box-sizing: border-box;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.tlp-tech-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-border-hover);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.05);
+}
+
+.tlp-card-header-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.tlp-card-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 8px;
+  background-color: rgb(223, 228, 255);
+  color: var(--color-blue-tag);
+  font-size: 1.35rem;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.tlp-tech-card:hover .tlp-card-icon-box {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.tlp-tech-card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.tlp-tech-card-link {
+  color: var(--color-text-dark);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.tlp-tech-card:hover .tlp-tech-card-link {
+  color: var(--color-primary);
+  text-decoration-color: var(--color-primary);
+}
+
+.tlp-tech-card-description {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .tlp-hero-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .tlp-hero-text {
+    text-align: center;
+    align-items: center;
+  }
+
+  .tlp-hero-title {
+    font-size: 2.8rem;
+  }
+
+  .tlp-hero-image-wrapper {
+    order: -1;
+  }
+
+  .tlp-cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+
+  .tlp-category-header {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .tlp-breadcrumbs-container {
+    padding: 12px 20px;
+    padding-top: 32px;
+    padding-bottom: 1px;
+  }
+
+  .tlp-hero-section {
+    padding: 40px 20px;
+  }
+
+  .tlp-grid-section {
+    padding: 50px 20px;
+  }
+
+  .tlp-hero-title {
+    font-size: 2.2rem;
+  }
+
+  .tlp-tech-card {
+    padding: 24px;
+  }
+}
